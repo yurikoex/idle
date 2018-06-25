@@ -1597,8 +1597,6 @@ export default ({ resetName }) => {
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 195 131.9296875"
 					clip-path="url(#clip)"
-					width="512"
-					height="346.4"
 				>
 					<defs>
 						<clipPath id="clip" clipPathUnits="objectBoundingBox">
@@ -3174,8 +3172,6 @@ export default ({ resetName }) => {
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 195 121.875"
 					clip-path="url(#clip)"
-					width="512"
-					height="320"
 				>
 					<defs>
 						<clipPath id="clip" clipPathUnits="objectBoundingBox">
