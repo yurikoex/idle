@@ -1,7 +1,5 @@
 export default number => {
 	let formatted = number
-	const formatOptions = { style: 'decimal', minimumFractionDigits: 1 }
-	const x = new Intl.NumberFormat(formatOptions)
 	const formatter = { format: n => Number(n.toFixed(0)).toLocaleString() }
 	if (number < 10000) {
 		formatted = formatter.format(number) + ''
