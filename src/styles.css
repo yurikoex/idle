@@ -4,6 +4,15 @@ body {
 	padding: 0px;
 }
 
+.reset {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: 500;
+	color: #348539;
+}
+
 .ticker {
 	display: flex;
 	width: 100%;

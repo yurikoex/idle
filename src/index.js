@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Button } from '@material-ui/core'
 
 import './styles.css'
 import Ticker from './Ticker'
@@ -29,7 +30,56 @@ const increaseCost = ({ state, type }) =>
 const levelCost = ({ state, type }) =>
 	type.cost * type.level * state.levelCostMultiplier
 
-const defaultState = () => ({
+const resetValue = [
+	{
+		resetLevel: 0,
+		resetCost: 1000,
+		resetName: 'Tent Camp',
+		resourceType: 'Scraps'
+	},
+	{
+		resetLevel: 1,
+		resetCost: 10000,
+		resetName: 'Abandon Building',
+		resourceType: 'Cans of food'
+	},
+	{
+		resetLevel: 2,
+		resetCost: 100000,
+		resetName: 'Gated Neighborhood',
+		resourceType: 'Bullets'
+	},
+	{
+		resetLevel: 3,
+		resetCost: 1000000,
+		resetName: 'Military Base',
+		resourceType: 'Gold'
+	},
+	{
+		resetLevel: 4,
+		resetCost: 10000000,
+		resetName: 'New World City',
+		resourceType: 'Cash'
+	},
+	{
+		resetLevel: 5,
+		resetCost: 100000000,
+		resetName: 'Metropolis',
+		resourceType: 'eBits'
+	},
+	{
+		resetLevel: 6,
+		resetCost: 1000000000,
+		resetName: 'Space Station Alpha',
+		resourceType: 'Galaxy Creds'
+	}
+]
+
+const getReset = (level = 0) => {
+	return resetValue[level]
+}
+const defaultState = (level = 0) => ({
+	...getReset(level),
 	lastTick: new Date().getTime(),
 	levelCostMultiplier: 1000,
 	increaseCostMultiplier: 1.5,
@@ -51,6 +101,18 @@ const defaultState = () => ({
 			name: 'Mutatoe',
 			cost: 100,
 			multiplier: 0.1
+		},
+		{
+			...typeBase,
+			name: 'Elite',
+			cost: 1000,
+			multiplier: 1
+		},
+		{
+			...typeBase,
+			name: 'Heroe',
+			cost: 10000,
+			multiplier: 10
 		}
 	]
 })
@@ -125,13 +187,19 @@ class App extends React.PureComponent {
 		return this.state.amount - levelCost({ state: this.state, type }) <= 0
 	}
 
-	reset() {
-		this.setState(defaultState())
+	canReset() {
+		return this.state.amount - this.state.resetCost <= 0
+	}
+
+	reset(level = 0) {
+		console.log(level)
+		this.setState(defaultState(level))
 	}
 
 	render() {
 		return (
 			<div className="App">
+				<div className="reset">{this.state.resetName}</div>
 				<Ticker
 					amount={this.state.amount}
 					resourceType={this.state.resourceType}
@@ -152,9 +220,23 @@ class App extends React.PureComponent {
 							/>
 						))}
 				</div>
+				{this.state.resetCost < this.state.maxAmount ? (
+					<Button
+						className="resetWorld"
+						disabled={this.canReset()}
+						onClick={() => this.reset(this.state.resetLevel + 1)}
+					>
+						move to {getReset(this.state.resetLevel + 1).resetName}(<strong>
+							reset
+						</strong>)
+					</Button>
+				) : null}
 				{this.state.isDebug ? (
 					<div className="debug">
-						<button onClick={() => this.reset()}>reset</button>
+						<button style={{ width: 50 }} onClick={() => this.reset()}>
+							reset
+						</button>
+
 						<span>r:{this.state.multiplier}</span>
 						<span>t:{this.state.amount}</span>
 					</div>
