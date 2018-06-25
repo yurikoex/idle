@@ -1,5 +1,4 @@
-import React, { Fragment } from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react'
 import { Button, Paper, Icon, Chip, Avatar } from '@material-ui/core'
 
 export default ({
