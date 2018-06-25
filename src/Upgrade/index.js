@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button, Paper, Icon, Chip, Avatar } from '@material-ui/core'
 
+import formatter from '../ResourceFormatter'
+
 export default ({
 	type,
 	canBuy,
@@ -70,7 +72,7 @@ export default ({
 			</div>
 			<div className="upgrade">
 				<span>
-					{Math.floor(type.level * type.count * type.multiplier * 60 * 60)}{' '}
+					{formatter(type.level * type.count * type.multiplier * 60 * 60)}{' '}
 					{resourceType} per minute
 				</span>
 			</div>

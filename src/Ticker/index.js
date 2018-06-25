@@ -1,6 +1,8 @@
 import React from 'react'
 import { Icon } from '@material-ui/core'
-const formatter = amount => Math.floor(amount)
+
+import formatter from '../ResourceFormatter'
+
 export default ({ amount, resourceType }) => (
 	<div className="ticker">
 		{formatter(amount)} {resourceType}

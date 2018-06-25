@@ -24,41 +24,40 @@ const updateState = ({ cost, updatedTypes, state }) => ({
 })
 
 const increaseCost = ({ state, type }) =>
-	type.level * type.cost + type.count * state.increaseCostMultiplier
+	type.level * type.cost * type.count * state.increaseCostMultiplier + type.cost
 
 const levelCost = ({ state, type }) =>
 	type.cost * type.level * state.levelCostMultiplier
 
+const defaultState = () => ({
+	lastTick: new Date().getTime(),
+	levelCostMultiplier: 1000,
+	increaseCostMultiplier: 1.5,
+	isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
+	amount: 10,
+	multiplier: 0,
+	resourceType: 'cans of food',
+	types: [
+		{ ...typeBase, name: 'Wastelander' },
+		{
+			...typeBase,
+			name: 'Wounded Warrior',
+			cost: 10,
+			multiplier: 0.01
+		},
+		{
+			...typeBase,
+			name: 'Mutatoe',
+			cost: 100,
+			multiplier: 0.1
+		}
+	]
+})
 class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
 		const ls = window.localStorage.getItem('state')
-		ls
-			? (this.state = JSON.parse(ls))
-			: (this.state = {
-					lastTick: new Date().getTime(),
-					levelCostMultiplier: 100,
-					increaseCostMultiplier: 1.1,
-					isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
-					amount: 10,
-					multiplier: 0,
-					resourceType: 'cans of food',
-					types: [
-						{ ...typeBase, name: 'Wastelander' },
-						{
-							...typeBase,
-							name: 'Wounded Warrior',
-							cost: 10,
-							multiplier: 0.01
-						},
-						{
-							...typeBase,
-							name: 'Mutatoe',
-							cost: 100,
-							multiplier: 0.1
-						}
-					]
-				})
+		ls ? (this.state = JSON.parse(ls)) : (this.state = defaultState())
 	}
 	componentDidMount() {
 		this.startLoop()
@@ -123,6 +122,10 @@ class App extends React.PureComponent {
 		return this.state.amount - levelCost({ state: this.state, type }) <= 0
 	}
 
+	reset() {
+		this.setState(defaultState())
+	}
+
 	render() {
 		return (
 			<div className="App">
@@ -146,6 +149,7 @@ class App extends React.PureComponent {
 				</div>
 				{this.state.isDebug ? (
 					<div className="debug">
+						<button onClick={() => this.reset()}>reset</button>
 						<span>r:{this.state.multiplier}</span>
 						<span>t:{this.state.amount}</span>
 					</div>
