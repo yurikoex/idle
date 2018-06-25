@@ -32,29 +32,33 @@ const levelCost = ({ state, type }) =>
 class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
-		this.state = {
-			levelCostMultiplier: 100,
-			increaseCostMultiplier: 1.1,
-			isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
-			amount: 10,
-			multiplier: 0,
-			resourceType: 'cans of food',
-			types: [
-				{ ...typeBase, name: 'Wastelander' },
-				{
-					...typeBase,
-					name: 'Wounded Warrior',
-					cost: 10,
-					multiplier: 0.01
-				},
-				{
-					...typeBase,
-					name: 'Mutatoe',
-					cost: 100,
-					multiplier: 0.1
-				}
-			]
-		}
+		const ls = window.localStorage.getItem('state')
+		ls
+			? (this.state = JSON.parse(ls))
+			: (this.state = {
+					lastTick: new Date().getTime(),
+					levelCostMultiplier: 100,
+					increaseCostMultiplier: 1.1,
+					isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
+					amount: 10,
+					multiplier: 0,
+					resourceType: 'cans of food',
+					types: [
+						{ ...typeBase, name: 'Wastelander' },
+						{
+							...typeBase,
+							name: 'Wounded Warrior',
+							cost: 10,
+							multiplier: 0.01
+						},
+						{
+							...typeBase,
+							name: 'Mutatoe',
+							cost: 100,
+							multiplier: 0.1
+						}
+					]
+				})
 	}
 	componentDidMount() {
 		this.startLoop()
@@ -72,10 +76,15 @@ class App extends React.PureComponent {
 
 	loop(scope) {
 		return () => {
-			scope.setState(state => ({
-				...state,
-				amount: state.amount + 1 * state.multiplier
-			}))
+			scope.setState(state => {
+				const newState = {
+					...state,
+					amount: state.amount + 1 * state.multiplier
+				}
+
+				window.localStorage.setItem('state', JSON.stringify(newState))
+				return newState
+			})
 			scope._frameId = window.requestAnimationFrame(scope.loop(scope))
 		}
 	}
@@ -88,7 +97,7 @@ class App extends React.PureComponent {
 
 	increase(type) {
 		this.setState(state => {
-			const cost = increaseCost({ state, type: updatedType })
+			const cost = increaseCost({ state, type })
 			const updatedTypes = state.types.map(
 				t => (t.name === type.name ? { ...t, count: t.count + 1 } : t)
 			)
@@ -100,7 +109,7 @@ class App extends React.PureComponent {
 
 	level(type) {
 		this.setState(state => {
-			const cost = levelCost({ state, type: updatedType })
+			const cost = levelCost({ state, type })
 			const updatedTypes = state.types.map(
 				t => (t.name === type.name ? { ...t, level: t.level + 1 } : t)
 			)
