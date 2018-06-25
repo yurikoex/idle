@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Button } from '@material-ui/core'
-
+import config from './config'
 import './styles.css'
 import Ticker from './Ticker'
 import Upgrade from './Upgrade'
@@ -86,6 +86,7 @@ const getReset = (level = 0) => {
 }
 const defaultState = (level = 0) => ({
 	...getReset(level),
+	...config,
 	lastTick: new Date().getTime(),
 	levelCostMultiplier: 1000,
 	increaseCostMultiplier: 1.5,
@@ -126,15 +127,18 @@ class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
 		const ls = window.localStorage.getItem('state')
-		ls
-			? (this.state = {
-					...JSON.parse(ls),
+		if (ls) {
+			const savedState = JSON.parse(ls)
+			if (savedState.version === config.version)
+				this.state = {
+					...savedState,
 					amount:
-						JSON.parse(ls).amount +
-						(new Date().getTime() - JSON.parse(ls).lastTick) / 1000
-				})
-			: (this.state = defaultState())
-		console.log(new Date().getTime() - JSON.parse(ls).lastTick)
+						savedState.amount +
+						(new Date().getTime() - savedState.lastTick) / 1000
+				}
+			else this.state = defaultState(savedState.resetLevel)
+		} else this.state = defaultState()
+		console.log(this.state)
 	}
 	componentDidMount() {
 		this.startLoop()
