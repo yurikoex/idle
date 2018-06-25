@@ -133,7 +133,7 @@ class App extends React.PureComponent {
 		return (
 			<div className="App">
 				<Background resetName={this.state.resetName} />
-				<div className="reset">{this.state.resetName}</div>
+				<div className="reset">{this.state.actionVerb}</div>
 				<Ticker
 					amount={this.state.amount}
 					resourceType={this.state.resourceType}
