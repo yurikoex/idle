@@ -1,18 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import { Button } from '@material-ui/core'
-import config from './config'
+import { version as config, defaultState, getReset } from './Config'
 import './styles.css'
 import Ticker from './Ticker'
 import Upgrade from './Upgrade'
-const typeBase = {
-	name: 'GIVE ME A NAME',
-	count: 0,
-	max: 15,
-	multiplier: 0.001,
-	cost: 1,
-	level: 1
-}
+import Background from './Backgrounds'
 
 const updateState = ({ cost, updatedTypes, state }) => ({
 	...state,
@@ -30,98 +23,6 @@ const increaseCost = ({ state, type }) =>
 const levelCost = ({ state, type }) =>
 	type.cost * type.level * state.levelCostMultiplier
 
-const resetValue = [
-	{
-		resetLevel: 0,
-		resetCost: 1000,
-		resetName: 'Tent Camp',
-		resourceType: 'Scraps'
-	},
-	{
-		resetLevel: 1,
-		resetCost: 10000,
-		resetName: 'Abandon Building',
-		resourceType: 'Cans of food'
-	},
-	{
-		resetLevel: 2,
-		resetCost: 100000,
-		resetName: 'Gated Neighborhood',
-		resourceType: 'Bullets'
-	},
-	{
-		resetLevel: 3,
-		resetCost: 1000000,
-		resetName: 'Military Base',
-		resourceType: 'Gold'
-	},
-	{
-		resetLevel: 4,
-		resetCost: 10000000,
-		resetName: 'New World City',
-		resourceType: 'Cash'
-	},
-	{
-		resetLevel: 5,
-		resetCost: 100000000,
-		resetName: 'Metropolis',
-		resourceType: 'eBits'
-	},
-	{
-		resetLevel: 6,
-		resetCost: 1000000000,
-		resetName: 'Space Station Alpha',
-		resourceType: 'Galaxy Creds'
-	},
-	{
-		resetLevel: 7,
-		resetCost: 10000000000,
-		resetName: 'Ethereal Plane',
-		resourceType: 'Chi'
-	}
-]
-
-const getReset = (level = 0) => {
-	return resetValue[level]
-}
-const defaultState = (level = 0) => ({
-	...getReset(level),
-	...config,
-	lastTick: new Date().getTime(),
-	levelCostMultiplier: 1000,
-	increaseCostMultiplier: 1.5,
-	isDebug: window.location.hostname.indexOf('codesandbox') !== -1,
-	amount: 10,
-	maxAmount: 0,
-	multiplier: 0,
-	types: [
-		{ ...typeBase, name: 'Wastelander' },
-		{
-			...typeBase,
-			name: 'Wounded Warrior',
-			cost: 10,
-			multiplier: 0.01
-		},
-		{
-			...typeBase,
-			name: 'Mutatoe',
-			cost: 100,
-			multiplier: 0.1
-		},
-		{
-			...typeBase,
-			name: 'Elite',
-			cost: 1000,
-			multiplier: 1
-		},
-		{
-			...typeBase,
-			name: 'Heroe',
-			cost: 10000,
-			multiplier: 10
-		}
-	]
-})
 class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
@@ -153,10 +54,26 @@ class App extends React.PureComponent {
 		}
 	}
 
+	adjustments(state) {
+		// return 0
+		const bonus =
+			0.001 *
+			state.types.filter(type => type.preferredLocation === state.resetName)
+				.length
+
+		const hinderance =
+			0.001 *
+			state.types.filter(type => type.hinderanceLocation === state.resetName)
+				.length
+
+		return bonus - hinderance
+	}
+
 	loop(scope) {
 		return () => {
 			scope.setState(state => {
-				const newAmount = state.amount + 1 * state.multiplier
+				const newAmount =
+					state.amount + 1 * state.multiplier * this.adjustments(state)
 				const newState = {
 					...state,
 					lastTick: new Date().getTime(),
@@ -173,8 +90,6 @@ class App extends React.PureComponent {
 
 	stopLoop() {
 		window.cancelAnimationFrame(this._frameId)
-		// Note: no need to worry if the loop has already been cancelled
-		// cancelAnimationFrame() won't throw an error
 	}
 
 	increase(type) {
@@ -213,14 +128,17 @@ class App extends React.PureComponent {
 		console.log(level)
 		this.setState(defaultState(level))
 	}
-
+	// https://ondras.github.io/primitive.js/
 	render() {
 		return (
 			<div className="App">
+				<Background resetName={this.state.resetName} />
 				<div className="reset">{this.state.resetName}</div>
 				<Ticker
 					amount={this.state.amount}
 					resourceType={this.state.resourceType}
+					actionVerb={this.state.actionVerb}
+					multiplier={this.state.multiplier}
 				/>
 				<div className="type-container">
 					{this.state.types
@@ -235,6 +153,7 @@ class App extends React.PureComponent {
 								resourceType={this.state.resourceType}
 								increaseCost={increaseCost({ state: this.state, type })}
 								levelCost={levelCost({ state: this.state, type })}
+								state={this.state}
 							/>
 						))}
 				</div>

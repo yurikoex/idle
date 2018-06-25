@@ -11,7 +11,8 @@ export default ({
 	increase,
 	resourceType,
 	levelCost,
-	increaseCost
+	increaseCost,
+	state
 }) => (
 	<div className="upgrade-container">
 		<Paper>
@@ -72,6 +73,19 @@ export default ({
 					label={Math.floor(levelCost)}
 				/>
 			</div>
+			<div className="upgrade">
+				<span className="desc">{type.desc}</span>
+			</div>
+			{state.resetName === type.preferredLocation ? (
+				<div className="upgrade">
+					<span className="bonus">{type.bonusDesc}</span>
+				</div>
+			) : null}
+			{state.resetName === type.hinderanceLocation ? (
+				<div className="upgrade">
+					<span className="hinderance">{type.hinderanceDesc}</span>
+				</div>
+			) : null}
 			<div className="upgrade">
 				<span>
 					{formatter(type.level * type.count * type.multiplier * 60 * 60)}{' '}
