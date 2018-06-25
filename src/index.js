@@ -49,7 +49,7 @@ class App extends React.PureComponent {
 				},
 				{
 					...typeBase,
-					name: 'Mutate',
+					name: 'Mutatoe',
 					cost: 100,
 					multiplier: 0.1
 				}
