@@ -35,6 +35,7 @@ const defaultState = () => ({
 	increaseCostMultiplier: 1.5,
 	isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
 	amount: 10,
+	maxAmount: 0,
 	multiplier: 0,
 	resourceType: 'cans of food',
 	types: [
@@ -76,9 +77,11 @@ class App extends React.PureComponent {
 	loop(scope) {
 		return () => {
 			scope.setState(state => {
+				const newAmount = state.amount + 1 * state.multiplier
 				const newState = {
 					...state,
-					amount: state.amount + 1 * state.multiplier
+					amount: newAmount,
+					maxAmount: state.maxAmount < newAmount ? newAmount : state.maxAmount
 				}
 
 				window.localStorage.setItem('state', JSON.stringify(newState))
@@ -134,18 +137,20 @@ class App extends React.PureComponent {
 					resourceType={this.state.resourceType}
 				/>
 				<div className="type-container">
-					{this.state.types.map(type => (
-						<Upgrade
-							type={type}
-							canBuy={type => this.canBuy(type)}
-							canLevel={type => this.canLevel(type)}
-							level={type => this.level(type)}
-							increase={type => this.increase(type)}
-							resourceType={this.state.resourceType}
-							increaseCost={increaseCost({ state: this.state, type })}
-							levelCost={levelCost({ state: this.state, type })}
-						/>
-					))}
+					{this.state.types
+						.filter(t => t.cost < this.state.maxAmount)
+						.map(type => (
+							<Upgrade
+								type={type}
+								canBuy={type => this.canBuy(type)}
+								canLevel={type => this.canLevel(type)}
+								level={type => this.level(type)}
+								increase={type => this.increase(type)}
+								resourceType={this.state.resourceType}
+								increaseCost={increaseCost({ state: this.state, type })}
+								levelCost={levelCost({ state: this.state, type })}
+							/>
+						))}
 				</div>
 				{this.state.isDebug ? (
 					<div className="debug">
