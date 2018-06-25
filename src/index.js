@@ -72,6 +72,12 @@ const resetValue = [
 		resetCost: 1000000000,
 		resetName: 'Space Station Alpha',
 		resourceType: 'Galaxy Creds'
+	},
+	{
+		resetLevel: 7,
+		resetCost: 10000000000,
+		resetName: 'Ethereal Plane',
+		resourceType: 'Chi'
 	}
 ]
 
