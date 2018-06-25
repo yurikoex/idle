@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button, Paper } from '@material-ui/core'
 
 import './styles.css'
 import Ticker from './Ticker'
@@ -15,6 +14,7 @@ const typeBase = {
 }
 
 const updateState = ({ cost, updatedTypes, state }) => ({
+	...state,
 	multiplier: updatedTypes.reduce(
 		(m, t) => m + t.count * t.multiplier * t.level,
 		0
@@ -23,10 +23,18 @@ const updateState = ({ cost, updatedTypes, state }) => ({
 	types: updatedTypes
 })
 
+const increaseCost = ({ state, type }) =>
+	type.cost + type.count * state.increaseCostMultiplier
+
+const levelCost = ({ state, type }) =>
+	type.cost * type.level * state.levelCostMultiplier
+
 class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
 		this.state = {
+			levelCostMultiplier: 100,
+			increaseCostMultiplier: 1.1,
 			isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
 			amount: 10,
 			multiplier: 0,
@@ -78,33 +86,29 @@ class App extends React.PureComponent {
 				t => (t.name === type.name ? { ...t, count: t.count + 1 } : t)
 			)
 			const updatedType = updatedTypes.find(t => t.name === type.name)
-			const cost = updatedType.cost
-			return {
-				...state,
-				...updateState({ cost, updatedTypes, state })
-			}
+			const cost = increaseCost({ state, type: updatedType })
+			console.log(cost)
+			return updateState({ cost, updatedTypes, state })
 		})
 	}
+
 	level(type) {
 		this.setState(state => {
 			const updatedTypes = state.types.map(
 				t => (t.name === type.name ? { ...t, level: t.level + 1 } : t)
 			)
 			const updatedType = updatedTypes.find(t => t.name === type.name)
-			const cost = type.cost * type.level * 10
-			return {
-				...state,
-				...updateState({ cost, updatedTypes, state })
-			}
+			const cost = levelCost({ state, type: updatedType })
+			return updateState({ cost, updatedTypes, state })
 		})
 	}
 
 	canBuy(type) {
-		return this.state.amount - type.cost <= 0
+		return this.state.amount - increaseCost({ state: this.state, type }) <= 0
 	}
 
 	canLevel(type) {
-		return this.state.amount - type.cost * type.level * 10 <= 0
+		return this.state.amount - levelCost({ state: this.state, type }) <= 0
 	}
 
 	render() {
@@ -123,6 +127,8 @@ class App extends React.PureComponent {
 							level={type => this.level(type)}
 							increase={type => this.increase(type)}
 							resourceType={this.state.resourceType}
+							increaseCost={increaseCost({ state: this.state, type })}
+							levelCost={levelCost({ state: this.state, type })}
 						/>
 					))}
 				</div>

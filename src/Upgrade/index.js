@@ -2,7 +2,16 @@ import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import { Button, Paper, Icon, Chip, Avatar } from '@material-ui/core'
 
-export default ({ type, canBuy, canLevel, level, increase, resourceType }) => (
+export default ({
+	type,
+	canBuy,
+	canLevel,
+	level,
+	increase,
+	resourceType,
+	levelCost,
+	increaseCost
+}) => (
 	<div className="upgrade-container">
 		<Paper>
 			<div className="upgrade">
@@ -33,7 +42,7 @@ export default ({ type, canBuy, canLevel, level, increase, resourceType }) => (
 							<Icon>attach_money</Icon>
 						</Avatar>
 					}
-					label={type.cost}
+					label={Math.floor(increaseCost)}
 				/>
 				<Chip
 					avatar={
@@ -57,10 +66,13 @@ export default ({ type, canBuy, canLevel, level, increase, resourceType }) => (
 							<Icon>attach_money</Icon>
 						</Avatar>
 					}
-					label={type.level * type.cost * 10}
+					label={Math.floor(levelCost)}
 				/>
+			</div>
+			<div className="upgrade">
 				<span>
-					{Math.floor(type.multiplier * 60 * 60)} {resourceType} per minute
+					{Math.floor(type.level * type.count * type.multiplier * 60 * 60)}{' '}
+					{resourceType} per minute
 				</span>
 			</div>
 		</Paper>
