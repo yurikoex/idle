@@ -89,7 +89,7 @@ const defaultState = (level = 0) => ({
 	lastTick: new Date().getTime(),
 	levelCostMultiplier: 1000,
 	increaseCostMultiplier: 1.5,
-	isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
+	isDebug: window.location.hostname.indexOf('codesandbox') !== -1,
 	amount: 10,
 	maxAmount: 0,
 	multiplier: 0,
@@ -126,7 +126,15 @@ class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
 		const ls = window.localStorage.getItem('state')
-		ls ? (this.state = JSON.parse(ls)) : (this.state = defaultState())
+		ls
+			? (this.state = {
+					...JSON.parse(ls),
+					amount:
+						JSON.parse(ls).amount +
+						(new Date().getTime() - JSON.parse(ls).lastTick) / 1000
+				})
+			: (this.state = defaultState())
+		console.log(new Date().getTime() - JSON.parse(ls).lastTick)
 	}
 	componentDidMount() {
 		this.startLoop()
@@ -148,6 +156,7 @@ class App extends React.PureComponent {
 				const newAmount = state.amount + 1 * state.multiplier
 				const newState = {
 					...state,
+					lastTick: new Date().getTime(),
 					amount: newAmount,
 					maxAmount: state.maxAmount < newAmount ? newAmount : state.maxAmount
 				}
