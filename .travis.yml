@@ -3,15 +3,22 @@ node_js:
 - "10"
 script:
   - npm run build
-after_success: |
-  if [ -n "$GITHUB_API_TOKEN" ]; then
-  cd "$TRAVIS_BUILD_DIR"
-  make web
-  cd web
-  git init
-  git checkout -b gh-pages
-  git add .
-    git -c user.name = 'travis' -c user.email = 'travis' commit -m 'init'
-  git push -f -q https://yurikoex:$GITHUB_API_KEY@github.com/yurikoex/idle-gh-pages gh-pages &2>/dev/null
-  cd "$TRAVIS_BUILD_DIR"
-  fi
+// after_success: |
+//   if [ -n "$GITHUB_API_TOKEN" ]; then
+//   cd "$TRAVIS_BUILD_DIR"
+//   make web
+//   cd web
+//   git init
+//   git checkout -b gh-pages
+//   git add .
+//     git -c user.name = 'travis' -c user.email = 'travis' commit -m 'init'
+//   git push -f -q https://yurikoex:$GITHUB_API_KEY@github.com/yurikoex/idle-gh-pages gh-pages &2>/dev/null
+//   cd "$TRAVIS_BUILD_DIR"
+//   fi
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/
+  github_token: $GITHUB_API_TOKEN
+  on:
+    branch: master
