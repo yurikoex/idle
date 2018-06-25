@@ -27,7 +27,7 @@ class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
 		this.state = {
-			isDebug: location.hostname.indexOf('codesandbox' !== -1),
+			isDebug: window.location.hostname.indexOf('codesandbox' !== -1),
 			amount: 10,
 			multiplier: 0,
 			resourceType: 'cans of food',
