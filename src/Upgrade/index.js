@@ -17,24 +17,26 @@ export default ({
 		<Paper>
 			<div className="upgrade">
 				<span className="type-name">{type.name}s </span>
-				<Button
-					size="small"
-					variant="flat"
-					color="primary"
-					disabled={canBuy(type)}
-					onClick={() => increase(type)}
-				>
-					Recruit
-				</Button>
-				<Button
-					size="small"
-					variant="flat"
-					color="secondary"
-					disabled={canLevel(type)}
-					onClick={() => level(type)}
-				>
-					level up
-				</Button>
+				<div>
+					<Button
+						size="small"
+						variant="flat"
+						color="primary"
+						disabled={canBuy(type)}
+						onClick={() => increase(type)}
+					>
+						Recruit
+					</Button>
+					<Button
+						size="small"
+						variant="flat"
+						color="secondary"
+						disabled={canLevel(type)}
+						onClick={() => level(type)}
+					>
+						level up
+					</Button>
+				</div>
 			</div>
 			<div className="upgrade">
 				<Chip
