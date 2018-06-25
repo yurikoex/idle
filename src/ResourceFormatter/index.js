@@ -7,6 +7,8 @@ export default number => {
 		formatted = formatter.format(number / 1000) + 'K'
 	} else if (number > 10000000 && number < 10000000000) {
 		formatted = formatter.format(number / 1000000) + 'M'
+	} else if (number > 10000000000 && number < 10000000000000) {
+		formatted = formatter.format(number / 1000000000) + 'B'
 	}
 	return formatted
 }
