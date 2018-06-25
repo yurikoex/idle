@@ -94,7 +94,6 @@ const defaultState = (level = 0) => ({
 	amount: 10,
 	maxAmount: 0,
 	multiplier: 0,
-	resourceType: 'cans of food',
 	types: [
 		{ ...typeBase, name: 'Wastelander' },
 		{
