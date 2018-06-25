@@ -24,7 +24,7 @@ const updateState = ({ cost, updatedTypes, state }) => ({
 })
 
 const increaseCost = ({ state, type }) =>
-	type.cost + type.count * state.increaseCostMultiplier
+	type.level * type.cost + type.count * state.increaseCostMultiplier
 
 const levelCost = ({ state, type }) =>
 	type.cost * type.level * state.levelCostMultiplier
@@ -46,6 +46,12 @@ class App extends React.PureComponent {
 					name: 'Wounded Warrior',
 					cost: 10,
 					multiplier: 0.01
+				},
+				{
+					...typeBase,
+					name: 'Mutate',
+					cost: 100,
+					multiplier: 0.1
 				}
 			]
 		}
