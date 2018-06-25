@@ -73,7 +73,7 @@ class App extends React.PureComponent {
 		return () => {
 			scope.setState(state => {
 				const newAmount =
-					state.amount + 1 * state.multiplier * this.adjustments(state)
+					state.amount + 1 * (state.multiplier + this.adjustments(state))
 				const newState = {
 					...state,
 					lastTick: new Date().getTime(),
