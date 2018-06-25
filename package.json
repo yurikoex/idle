@@ -15,6 +15,7 @@
 		"sass": "1.7.0"
 	},
 	"devDependencies": {},
+	"homepage": "./",
 	"scripts": {
 		"build-css": "node-sass-chokidar src/ -o src/",
 		"watch-css":
