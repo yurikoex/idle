@@ -101,8 +101,6 @@ class App extends React.PureComponent {
 			const updatedTypes = state.types.map(
 				t => (t.name === type.name ? { ...t, count: t.count + 1 } : t)
 			)
-			const updatedType = updatedTypes.find(t => t.name === type.name)
-			// console.log(cost)
 			return updateState({ cost, updatedTypes, state })
 		})
 	}
@@ -113,7 +111,6 @@ class App extends React.PureComponent {
 			const updatedTypes = state.types.map(
 				t => (t.name === type.name ? { ...t, level: t.level + 1 } : t)
 			)
-			const updatedType = updatedTypes.find(t => t.name === type.name)
 			return updateState({ cost, updatedTypes, state })
 		})
 	}
