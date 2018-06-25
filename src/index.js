@@ -56,16 +56,21 @@ class App extends React.PureComponent {
 
 	adjustments(state) {
 		// return 0
-		const bonus =
-			0.001 *
-			state.types.filter(type => type.preferredLocation === state.resetName)
-				.length
+		const bonus = state.types.reduce(
+			(multiplier, type) =>
+				type.preferredLocation === state.resetName
+					? multiplier + 0.001 * type.count
+					: multiplier,
+			0.001
+		)
 
-		const hinderance =
-			0.001 *
-			state.types.filter(type => type.hinderanceLocation === state.resetName)
-				.length
-
+		const hinderance = state.types.reduce(
+			(multiplier, type) =>
+				type.hinderanceLocation === state.resetName
+					? multiplier + 0.001 * type.count
+					: multiplier,
+			0.001
+		)
 		return bonus - hinderance
 	}
 
