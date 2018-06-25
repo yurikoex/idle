@@ -1,0 +1,55 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.ticker {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-weight: 500;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+}
+
+.upgrade {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px;
+}
+.upgrade > span {
+	margin-top: 6px;
+}
+
+.upgrade-container {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	/* margin: 5px; */
+	margin-bottom: 5px;
+}
+
+.type-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.type-name {
+	font-weight: 500;
+	width: 190px;
+}
+.debug {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: grey;
+}

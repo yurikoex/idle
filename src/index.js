@@ -1,24 +1,45 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
+import { Button, Paper } from '@material-ui/core'
 
-import './styles.scss'
+import './styles.css'
 import Ticker from './Ticker'
-
+import Upgrade from './Upgrade'
 const typeBase = {
 	name: 'GIVE ME A NAME',
 	count: 0,
 	max: 15,
 	multiplier: 0.001,
-	cost: 1
+	cost: 1,
+	level: 1
 }
+
+const updateState = ({ cost, updatedTypes, state }) => ({
+	multiplier: updatedTypes.reduce(
+		(m, t) => m + t.count * t.multiplier * t.level,
+		0
+	),
+	amount: state.amount - cost,
+	types: updatedTypes
+})
 
 class App extends React.PureComponent {
 	constructor(props) {
 		super(props)
 		this.state = {
-			amount: 1,
-			multiplier: 0.001,
-			types: [{ ...typeBase, name: 'Wastelander' }]
+			isDebug: location.hostname.indexOf('codesandbox' !== -1),
+			amount: 10,
+			multiplier: 0,
+			resourceType: 'cans of food',
+			types: [
+				{ ...typeBase, name: 'Wastelander' },
+				{
+					...typeBase,
+					name: 'Wounded Warrior',
+					cost: 10,
+					multiplier: 0.01
+				}
+			]
 		}
 	}
 	componentDidMount() {
@@ -53,14 +74,27 @@ class App extends React.PureComponent {
 
 	increase(type) {
 		this.setState(state => {
-			console.log(state)
+			const updatedTypes = state.types.map(
+				t => (t.name === type.name ? { ...t, count: t.count + 1 } : t)
+			)
+			const updatedType = updatedTypes.find(t => t.name === type.name)
+			const cost = updatedType.cost
 			return {
 				...state,
-				multiplier: state.multiplier + 0.000001,
-				amount: state.amount - type.cost,
-				types: state.types.map(
-					t => (t.name === type.name ? { ...t, count: t.count + 1 } : t)
-				)
+				...updateState({ cost, updatedTypes, state })
+			}
+		})
+	}
+	level(type) {
+		this.setState(state => {
+			const updatedTypes = state.types.map(
+				t => (t.name === type.name ? { ...t, level: t.level + 1 } : t)
+			)
+			const updatedType = updatedTypes.find(t => t.name === type.name)
+			const cost = type.cost * type.level * 10
+			return {
+				...state,
+				...updateState({ cost, updatedTypes, state })
 			}
 		})
 	}
@@ -69,24 +103,35 @@ class App extends React.PureComponent {
 		return this.state.amount - type.cost <= 0
 	}
 
+	canLevel(type) {
+		return this.state.amount - type.cost * type.level * 10 <= 0
+	}
+
 	render() {
 		return (
 			<div className="App">
-				<Ticker amount={this.state.amount} />
-				{this.state.types.map(type => (
-					<div className="upgrade">
-						<span>
-							Count: {type.count} {type.name}s{' '}
-						</span>
-						<button
-							disabled={this.canBuy(type)}
-							onClick={() => this.increase(type)}
-						>
-							Recruit Wastelander
-						</button>
+				<Ticker
+					amount={this.state.amount}
+					resourceType={this.state.resourceType}
+				/>
+				<div className="type-container">
+					{this.state.types.map(type => (
+						<Upgrade
+							type={type}
+							canBuy={type => this.canBuy(type)}
+							canLevel={type => this.canLevel(type)}
+							level={type => this.level(type)}
+							increase={type => this.increase(type)}
+							resourceType={this.state.resourceType}
+						/>
+					))}
+				</div>
+				{this.state.isDebug ? (
+					<div className="debug">
+						<span>r:{this.state.multiplier}</span>
+						<span>t:{this.state.amount}</span>
 					</div>
-				))}
-				<div className="debug">{this.state.amount}</div>
+				) : null}
 			</div>
 		)
 	}
