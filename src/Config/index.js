@@ -14,7 +14,7 @@ export const resetValue = [
 		resetCost: 100,
 		resetName: 'Wastelands',
 		resourceType: 'Water',
-		actionVerb: 'Dieing in Wastelands'
+		actionVerb: 'Dying in Wastelands'
 	},
 	{
 		resetLevel: 1,
