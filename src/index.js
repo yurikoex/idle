@@ -77,12 +77,16 @@ class App extends React.PureComponent {
 	loop(scope) {
 		return () => {
 			scope.setState(state => {
+				const now = new Date().getTime()
+				const msSinceLastTick = (now - state.lastTick) / 1000
 				const newAmount =
 					state.amount + 1 * (state.multiplier + this.adjustments(state))
+				const adjustedNewAmount =
+					msSinceLastTick > 32 ? msSinceLastTick / 16.33 * newAmount : newAmount
 				const newState = {
 					...state,
 					lastTick: new Date().getTime(),
-					amount: newAmount,
+					amount: adjustedNewAmount,
 					maxAmount: state.maxAmount < newAmount ? newAmount : state.maxAmount
 				}
 
