@@ -103,6 +103,7 @@ class App extends React.PureComponent {
 	}
 
 	increase(type) {
+		// console.log('increase')
 		this.setState(state => {
 			const cost = increaseCost({ state, type })
 			const updatedTypes = state.types.map(
@@ -110,6 +111,13 @@ class App extends React.PureComponent {
 			)
 			return updateState({ cost, updatedTypes, state })
 		})
+	}
+
+	max(type) {
+		const clear = setInterval(
+			() => (!this.canBuy(type) ? this.increase(type) : clearInterval(clear)),
+			100
+		)
 	}
 
 	level(type) {
@@ -123,6 +131,7 @@ class App extends React.PureComponent {
 	}
 
 	canBuy(type) {
+		// console.log(this.state.amount)
 		return this.state.amount - increaseCost({ state: this.state, type }) <= 0
 	}
 
@@ -136,7 +145,9 @@ class App extends React.PureComponent {
 
 	reset(level = 0) {
 		console.log(level)
-		this.setState(defaultState(level))
+		this.setState(
+			defaultState(level, level !== 0 ? this.state.amount / 1000 : void 0)
+		)
 	}
 	// https://ondras.github.io/primitive.js/
 	render() {
@@ -165,6 +176,7 @@ class App extends React.PureComponent {
 								resourceType={this.state.resourceType}
 								increaseCost={increaseCost({ state: this.state, type })}
 								levelCost={levelCost({ state: this.state, type })}
+								max={type => this.max(type)}
 								state={this.state}
 							/>
 						))}

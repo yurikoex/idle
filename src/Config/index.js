@@ -81,14 +81,14 @@ export const getReset = (level = 0) => {
 
 export const version = { version: 2 }
 
-export const defaultState = (level = 0) => ({
+export const defaultState = (level = 0, amount = 10) => ({
 	...getReset(level),
 	...version,
 	lastTick: new Date().getTime(),
 	levelCostMultiplier: 1000,
 	increaseCostMultiplier: 1.5,
 	isDebug: true, //window.location.hostname.indexOf('codesandbox') !== -1,
-	amount: 10,
+	amount,
 	maxAmount: 0,
 	multiplier: 0,
 	types: [
