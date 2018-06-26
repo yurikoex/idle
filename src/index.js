@@ -114,10 +114,12 @@ class App extends React.PureComponent {
 	}
 
 	max(type) {
-		const clear = setInterval(
-			() => (!this.canBuy(type) ? this.increase(type) : clearInterval(clear)),
-			100
-		)
+		const clear = setInterval(() => {
+			const currentType = this.state.types.find(t => t.name === type.name)
+			!this.canBuy(currentType)
+				? this.increase(currentType)
+				: clearInterval(clear)
+		}, 100)
 	}
 
 	level(type) {
