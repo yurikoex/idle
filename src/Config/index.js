@@ -79,7 +79,7 @@ export const getReset = (level = 0) => {
 	return resetValue[level]
 }
 
-export const version = { version: 1 }
+export const version = { version: 2 }
 
 export const defaultState = (level = 0) => ({
 	...getReset(level),
