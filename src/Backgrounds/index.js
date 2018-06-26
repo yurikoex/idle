@@ -9467,6 +9467,4806 @@ export default ({ resetName }) => {
 					/>
 				</svg>
 			)
+		case 'Metropolis':
+			return (
+				<svg
+					preserveAspectRatio="xMidYMin slice"
+					className="background"
+					width="512"
+					height="100%"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 256 128"
+					clip-path="url(#clip)"
+				>
+					<defs>
+						<clipPath id="clip" clipPathUnits="objectBoundingBox">
+							<rect x="0" y="0" width="256" height="128" />
+						</clipPath>
+					</defs>
+					<rect x="0" y="0" width="256" height="128" fill="rgb(46, 56, 74)" />
+					<path
+						d="M16,-9L224,-9L224,63L16,63Z"
+						fill="rgb(190, 200, 220)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M-7,82L167,82L167,158L-7,158Z"
+						fill="rgb(7, 8, 12)"
+						fill-opacity="0.71"
+					/>
+					<path
+						d="M-16,45L76,45L76,127L-16,127Z"
+						fill="rgb(8, 12, 20)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M113,22L222,22L222,80L113,80Z"
+						fill="rgb(169, 172, 182)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M35,6L141,6L141,49L35,49Z"
+						fill="rgb(248, 253, 255)"
+						fill-opacity="0.27"
+					/>
+					<path
+						d="M145,88L280,88L280,149L145,149Z"
+						fill="rgb(29, 33, 43)"
+						fill-opacity="1.00"
+					/>
+					<ellipse
+						cx="214"
+						cy="21"
+						rx="25"
+						ry="25"
+						fill="rgb(35, 52, 84)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="9"
+						cy="12"
+						rx="26"
+						ry="23"
+						fill="rgb(118, 143, 184)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M18,54L116,54L116,103L18,103Z"
+						fill="rgb(25, 32, 44)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M116,74L206,74L206,103L116,103Z"
+						fill="rgb(68, 75, 88)"
+						fill-opacity="0.45"
+					/>
+					<ellipse
+						cx="96"
+						cy="5"
+						rx="16"
+						ry="13"
+						fill="rgb(218, 228, 235)"
+						fill-opacity="0.67"
+					/>
+					<ellipse
+						cx="30"
+						cy="44"
+						rx="46"
+						ry="7"
+						fill="rgb(73, 83, 110)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="158"
+						cy="0"
+						rx="17"
+						ry="16"
+						fill="rgb(45, 66, 110)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M102,27L112,27L112,82L102,82Z"
+						fill="rgb(23, 32, 48)"
+						fill-opacity="0.60"
+					/>
+					<ellipse
+						cx="57"
+						cy="-3"
+						rx="17"
+						ry="18"
+						fill="rgb(75, 107, 145)"
+						fill-opacity="0.63"
+					/>
+					<ellipse
+						cx="159"
+						cy="58"
+						rx="23"
+						ry="18"
+						fill="rgb(158, 162, 172)"
+						fill-opacity="0.55"
+					/>
+					<ellipse
+						cx="196"
+						cy="40"
+						rx="23"
+						ry="7"
+						fill="rgb(99, 111, 137)"
+						fill-opacity="0.58"
+					/>
+					<ellipse
+						cx="249"
+						cy="50"
+						rx="16"
+						ry="25"
+						fill="rgb(69, 86, 118)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="124"
+						cy="31"
+						rx="13"
+						ry="13"
+						fill="rgb(221, 219, 229)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="92"
+						cy="41"
+						rx="12"
+						ry="11"
+						fill="rgb(228, 220, 226)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="126"
+						cy="7"
+						rx="7"
+						ry="13"
+						fill="rgb(76, 104, 148)"
+						fill-opacity="0.43"
+					/>
+					<ellipse
+						cx="20"
+						cy="26"
+						rx="15"
+						ry="9"
+						fill="rgb(155, 165, 179)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M223,27L234,27L234,132L223,132Z"
+						fill="rgb(4, 5, 6)"
+						fill-opacity="0.32"
+					/>
+					<ellipse
+						cx="184"
+						cy="60"
+						rx="7"
+						ry="6"
+						fill="rgb(83, 94, 105)"
+						fill-opacity="0.58"
+					/>
+					<ellipse
+						cx="73"
+						cy="9"
+						rx="14"
+						ry="17"
+						fill="rgb(124, 153, 176)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="219"
+						cy="14"
+						rx="15"
+						ry="17"
+						fill="rgb(51, 66, 94)"
+						fill-opacity="0.56"
+					/>
+					<ellipse
+						cx="240"
+						cy="111"
+						rx="22"
+						ry="37"
+						fill="rgb(11, 18, 26)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="147"
+						cy="41"
+						rx="19"
+						ry="15"
+						fill="rgb(200, 199, 214)"
+						fill-opacity="0.37"
+					/>
+					<ellipse
+						cx="90"
+						cy="60"
+						rx="15"
+						ry="9"
+						fill="rgb(91, 97, 117)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="47"
+						cy="25"
+						rx="21"
+						ry="9"
+						fill="rgb(219, 212, 224)"
+						fill-opacity="0.40"
+					/>
+					<ellipse
+						cx="19"
+						cy="1"
+						rx="35"
+						ry="9"
+						fill="rgb(32, 69, 137)"
+						fill-opacity="0.32"
+					/>
+					<ellipse
+						cx="207"
+						cy="46"
+						rx="20"
+						ry="8"
+						fill="rgb(133, 140, 161)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M78,95L148,95L148,137L78,137Z"
+						fill="rgb(10, 13, 19)"
+						fill-opacity="0.56"
+					/>
+					<ellipse
+						cx="158"
+						cy="82"
+						rx="21"
+						ry="7"
+						fill="rgb(87, 96, 109)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M180,-8L198,-8L198,24L180,24Z"
+						fill="rgb(103, 118, 147)"
+						fill-opacity="0.72"
+					/>
+					<ellipse
+						cx="106"
+						cy="15"
+						rx="7"
+						ry="10"
+						fill="rgb(245, 240, 244)"
+						fill-opacity="0.55"
+					/>
+					<ellipse
+						cx="122"
+						cy="77"
+						rx="12"
+						ry="11"
+						fill="rgb(55, 64, 78)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M-15,56L30,56L30,122L-15,122Z"
+						fill="rgb(6, 6, 9)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="89"
+						cy="17"
+						rx="9"
+						ry="8"
+						fill="rgb(149, 166, 185)"
+						fill-opacity="0.65"
+					/>
+					<ellipse
+						cx="64"
+						cy="58"
+						rx="19"
+						ry="16"
+						fill="rgb(62, 71, 96)"
+						fill-opacity="0.35"
+					/>
+					<ellipse
+						cx="132"
+						cy="57"
+						rx="20"
+						ry="9"
+						fill="rgb(165, 171, 183)"
+						fill-opacity="0.47"
+					/>
+					<ellipse
+						cx="90"
+						cy="3"
+						rx="17"
+						ry="6"
+						fill="rgb(236, 249, 250)"
+						fill-opacity="0.30"
+					/>
+					<ellipse
+						cx="197"
+						cy="60"
+						rx="14"
+						ry="12"
+						fill="rgb(131, 139, 152)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="151"
+						cy="16"
+						rx="12"
+						ry="8"
+						fill="rgb(96, 116, 150)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="155"
+						cy="127"
+						rx="17"
+						ry="13"
+						fill="rgb(8, 9, 15)"
+						fill-opacity="0.57"
+					/>
+					<ellipse
+						cx="198"
+						cy="81"
+						rx="2"
+						ry="26"
+						fill="rgb(38, 44, 57)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="213"
+						cy="98"
+						rx="7"
+						ry="22"
+						fill="rgb(61, 64, 72)"
+						fill-opacity="0.45"
+					/>
+					<ellipse
+						cx="113"
+						cy="23"
+						rx="5"
+						ry="5"
+						fill="rgb(250, 246, 243)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="99"
+						cy="42"
+						rx="4"
+						ry="31"
+						fill="rgb(176, 181, 197)"
+						fill-opacity="0.37"
+					/>
+					<ellipse
+						cx="27"
+						cy="43"
+						rx="19"
+						ry="5"
+						fill="rgb(81, 91, 111)"
+						fill-opacity="0.59"
+					/>
+					<ellipse
+						cx="174"
+						cy="26"
+						rx="23"
+						ry="8"
+						fill="rgb(167, 170, 186)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="193"
+						cy="81"
+						rx="3"
+						ry="24"
+						fill="rgb(125, 132, 144)"
+						fill-opacity="0.43"
+					/>
+					<ellipse
+						cx="82"
+						cy="39"
+						rx="17"
+						ry="5"
+						fill="rgb(221, 218, 229)"
+						fill-opacity="0.35"
+					/>
+					<ellipse
+						cx="151"
+						cy="74"
+						rx="27"
+						ry="4"
+						fill="rgb(105, 114, 126)"
+						fill-opacity="0.56"
+					/>
+					<ellipse
+						cx="53"
+						cy="43"
+						rx="6"
+						ry="10"
+						fill="rgb(160, 165, 185)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M112,48L147,48L147,55L112,55Z"
+						fill="rgb(187, 190, 201)"
+						fill-opacity="0.54"
+					/>
+					<ellipse
+						cx="239"
+						cy="48"
+						rx="6"
+						ry="25"
+						fill="rgb(76, 88, 116)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M224,30L227,30L227,105L224,105Z"
+						fill="rgb(50, 57, 68)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="251"
+						cy="79"
+						rx="2"
+						ry="9"
+						fill="rgb(127, 130, 140)"
+						fill-opacity="0.39"
+					/>
+					<ellipse
+						cx="216"
+						cy="91"
+						rx="4"
+						ry="17"
+						fill="rgb(84, 86, 96)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="216"
+						cy="64"
+						rx="7"
+						ry="10"
+						fill="rgb(130, 137, 149)"
+						fill-opacity="0.69"
+					/>
+					<ellipse
+						cx="222"
+						cy="42"
+						rx="1"
+						ry="14"
+						fill="rgb(220, 220, 226)"
+						fill-opacity="0.37"
+					/>
+					<ellipse
+						cx="165"
+						cy="46"
+						rx="16"
+						ry="4"
+						fill="rgb(119, 132, 151)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="106"
+						cy="38"
+						rx="4"
+						ry="13"
+						fill="rgb(56, 70, 93)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="41"
+						cy="16"
+						rx="15"
+						ry="4"
+						fill="rgb(223, 220, 227)"
+						fill-opacity="0.41"
+					/>
+					<ellipse
+						cx="256"
+						cy="59"
+						rx="4"
+						ry="22"
+						fill="rgb(15, 26, 39)"
+						fill-opacity="0.47"
+					/>
+					<ellipse
+						cx="212"
+						cy="94"
+						rx="17"
+						ry="3"
+						fill="rgb(17, 21, 32)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="171"
+						cy="53"
+						rx="11"
+						ry="2"
+						fill="rgb(191, 193, 195)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="-5"
+						cy="33"
+						rx="15"
+						ry="12"
+						fill="rgb(55, 71, 99)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="114"
+						cy="3"
+						rx="7"
+						ry="9"
+						fill="rgb(118, 149, 174)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M173,110L193,110L193,121L173,121Z"
+						fill="rgb(68, 65, 77)"
+						fill-opacity="0.44"
+					/>
+					<ellipse
+						cx="255"
+						cy="13"
+						rx="17"
+						ry="11"
+						fill="rgb(20, 37, 70)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="31"
+						cy="13"
+						rx="5"
+						ry="10"
+						fill="rgb(153, 168, 187)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M176,30L178,30L178,96L176,96Z"
+						fill="rgb(240, 244, 248)"
+						fill-opacity="0.26"
+					/>
+					<ellipse
+						cx="198"
+						cy="122"
+						rx="5"
+						ry="15"
+						fill="rgb(15, 15, 18)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M55,58L101,58L101,112L55,112Z"
+						fill="rgb(30, 39, 48)"
+						fill-opacity="0.23"
+					/>
+					<ellipse
+						cx="181"
+						cy="72"
+						rx="3"
+						ry="18"
+						fill="rgb(26, 33, 42)"
+						fill-opacity="0.43"
+					/>
+					<ellipse
+						cx="67"
+						cy="12"
+						rx="10"
+						ry="9"
+						fill="rgb(104, 129, 157)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="147"
+						cy="53"
+						rx="12"
+						ry="14"
+						fill="rgb(168, 172, 182)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="79"
+						cy="6"
+						rx="10"
+						ry="9"
+						fill="rgb(163, 184, 198)"
+						fill-opacity="0.35"
+					/>
+					<ellipse
+						cx="195"
+						cy="2"
+						rx="5"
+						ry="14"
+						fill="rgb(75, 93, 126)"
+						fill-opacity="0.62"
+					/>
+					<ellipse
+						cx="13"
+						cy="24"
+						rx="6"
+						ry="19"
+						fill="rgb(104, 124, 156)"
+						fill-opacity="0.37"
+					/>
+					<ellipse
+						cx="31"
+						cy="30"
+						rx="21"
+						ry="8"
+						fill="rgb(149, 157, 176)"
+						fill-opacity="0.43"
+					/>
+					<ellipse
+						cx="-1"
+						cy="3"
+						rx="23"
+						ry="15"
+						fill="rgb(61, 88, 140)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="250"
+						cy="35"
+						rx="18"
+						ry="12"
+						fill="rgb(40, 61, 102)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="142"
+						cy="9"
+						rx="6"
+						ry="8"
+						fill="rgb(101, 120, 158)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="200"
+						cy="36"
+						rx="15"
+						ry="6"
+						fill="rgb(74, 89, 116)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="127"
+						cy="61"
+						rx="14"
+						ry="4"
+						fill="rgb(115, 126, 143)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M206,75L214,75L214,91L206,91Z"
+						fill="rgb(36, 51, 63)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="169"
+						cy="31"
+						rx="16"
+						ry="8"
+						fill="rgb(187, 185, 195)"
+						fill-opacity="0.37"
+					/>
+					<path
+						d="M215,-4L240,-4L240,26L215,26Z"
+						fill="rgb(49, 64, 93)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="218"
+						cy="80"
+						rx="2"
+						ry="4"
+						fill="rgb(180, 176, 183)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="18"
+						cy="8"
+						rx="7"
+						ry="14"
+						fill="rgb(87, 116, 149)"
+						fill-opacity="0.33"
+					/>
+					<ellipse
+						cx="121"
+						cy="100"
+						rx="9"
+						ry="11"
+						fill="rgb(14, 18, 29)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="59"
+						cy="24"
+						rx="10"
+						ry="3"
+						fill="rgb(230, 223, 226)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M66,29L82,29L82,36L66,36Z"
+						fill="rgb(194, 196, 217)"
+						fill-opacity="0.59"
+					/>
+					<ellipse
+						cx="194"
+						cy="69"
+						rx="1"
+						ry="20"
+						fill="rgb(198, 206, 215)"
+						fill-opacity="0.27"
+					/>
+					<ellipse
+						cx="135"
+						cy="22"
+						rx="8"
+						ry="2"
+						fill="rgb(195, 204, 223)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="208"
+						cy="125"
+						rx="21"
+						ry="7"
+						fill="rgb(15, 13, 18)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="141"
+						cy="88"
+						rx="14"
+						ry="8"
+						fill="rgb(43, 48, 64)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M149,97L155,97L155,108L149,108Z"
+						fill="rgb(78, 82, 97)"
+						fill-opacity="0.66"
+					/>
+					<ellipse
+						cx="49"
+						cy="37"
+						rx="20"
+						ry="4"
+						fill="rgb(145, 151, 175)"
+						fill-opacity="0.47"
+					/>
+					<ellipse
+						cx="219"
+						cy="55"
+						rx="4"
+						ry="16"
+						fill="rgb(160, 161, 171)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="163"
+						cy="-2"
+						rx="15"
+						ry="9"
+						fill="rgb(60, 77, 112)"
+						fill-opacity="0.37"
+					/>
+					<path
+						d="M204,8L217,8L217,34L204,34Z"
+						fill="rgb(70, 84, 111)"
+						fill-opacity="0.63"
+					/>
+					<ellipse
+						cx="193"
+						cy="21"
+						rx="17"
+						ry="4"
+						fill="rgb(117, 127, 149)"
+						fill-opacity="0.44"
+					/>
+					<ellipse
+						cx="187"
+						cy="102"
+						rx="19"
+						ry="4"
+						fill="rgb(50, 55, 65)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="7"
+						cy="53"
+						rx="31"
+						ry="5"
+						fill="rgb(31, 36, 56)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M129,61L176,61L176,71L129,71Z"
+						fill="rgb(136, 145, 154)"
+						fill-opacity="0.41"
+					/>
+					<ellipse
+						cx="251"
+						cy="125"
+						rx="11"
+						ry="10"
+						fill="rgb(7, 7, 11)"
+						fill-opacity="0.55"
+					/>
+					<ellipse
+						cx="228"
+						cy="74"
+						rx="3"
+						ry="16"
+						fill="rgb(14, 18, 26)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="162"
+						cy="105"
+						rx="7"
+						ry="20"
+						fill="rgb(24, 28, 37)"
+						fill-opacity="0.43"
+					/>
+					<ellipse
+						cx="83"
+						cy="82"
+						rx="29"
+						ry="5"
+						fill="rgb(23, 29, 41)"
+						fill-opacity="0.57"
+					/>
+					<ellipse
+						cx="101"
+						cy="90"
+						rx="2"
+						ry="13"
+						fill="rgb(37, 45, 56)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="153"
+						cy="51"
+						rx="8"
+						ry="17"
+						fill="rgb(166, 170, 183)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="179"
+						cy="120"
+						rx="11"
+						ry="5"
+						fill="rgb(39, 37, 48)"
+						fill-opacity="0.58"
+					/>
+					<ellipse
+						cx="188"
+						cy="88"
+						rx="4"
+						ry="14"
+						fill="rgb(73, 78, 90)"
+						fill-opacity="0.56"
+					/>
+					<ellipse
+						cx="47"
+						cy="91"
+						rx="17"
+						ry="17"
+						fill="rgb(13, 20, 27)"
+						fill-opacity="0.54"
+					/>
+					<ellipse
+						cx="188"
+						cy="26"
+						rx="5"
+						ry="3"
+						fill="rgb(184, 185, 193)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="175"
+						cy="25"
+						rx="7"
+						ry="6"
+						fill="rgb(138, 149, 170)"
+						fill-opacity="0.45"
+					/>
+					<ellipse
+						cx="235"
+						cy="100"
+						rx="6"
+						ry="16"
+						fill="rgb(24, 33, 46)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="183"
+						cy="42"
+						rx="13"
+						ry="4"
+						fill="rgb(104, 117, 137)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="53"
+						cy="4"
+						rx="8"
+						ry="9"
+						fill="rgb(83, 105, 141)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="121"
+						cy="45"
+						rx="9"
+						ry="9"
+						fill="rgb(188, 189, 202)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="94"
+						cy="85"
+						rx="7"
+						ry="10"
+						fill="rgb(31, 39, 56)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="135"
+						cy="7"
+						rx="3"
+						ry="10"
+						fill="rgb(144, 156, 192)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="204"
+						cy="61"
+						rx="4"
+						ry="13"
+						fill="rgb(150, 156, 165)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M59,40L67,40L67,91L59,91Z"
+						fill="rgb(26, 36, 50)"
+						fill-opacity="0.37"
+					/>
+					<ellipse
+						cx="45"
+						cy="14"
+						rx="9"
+						ry="2"
+						fill="rgb(206, 204, 220)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="4"
+						cy="72"
+						rx="27"
+						ry="18"
+						fill="rgb(16, 21, 29)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="212"
+						cy="122"
+						rx="3"
+						ry="6"
+						fill="rgb(39, 39, 47)"
+						fill-opacity="0.90"
+					/>
+					<ellipse
+						cx="182"
+						cy="101"
+						rx="3"
+						ry="9"
+						fill="rgb(18, 21, 31)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="99"
+						cy="8"
+						rx="6"
+						ry="6"
+						fill="rgb(240, 236, 242)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="124"
+						cy="92"
+						rx="18"
+						ry="8"
+						fill="rgb(29, 30, 45)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M123,28L132,28L132,42L123,42Z"
+						fill="rgb(216, 215, 223)"
+						fill-opacity="0.59"
+					/>
+					<ellipse
+						cx="82"
+						cy="22"
+						rx="9"
+						ry="9"
+						fill="rgb(136, 156, 178)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M122,15L135,15L135,26L122,26Z"
+						fill="rgb(152, 164, 187)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="180"
+						cy="111"
+						rx="7"
+						ry="2"
+						fill="rgb(74, 77, 88)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="87"
+						cy="126"
+						rx="45"
+						ry="3"
+						fill="rgb(5, 4, 7)"
+						fill-opacity="0.47"
+					/>
+					<ellipse
+						cx="125"
+						cy="82"
+						rx="17"
+						ry="6"
+						fill="rgb(55, 59, 75)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="239"
+						cy="60"
+						rx="4"
+						ry="12"
+						fill="rgb(97, 102, 118)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="99"
+						cy="32"
+						rx="4"
+						ry="16"
+						fill="rgb(184, 189, 202)"
+						fill-opacity="0.47"
+					/>
+					<ellipse
+						cx="208"
+						cy="40"
+						rx="4"
+						ry="2"
+						fill="rgb(122, 134, 157)"
+						fill-opacity="0.58"
+					/>
+					<ellipse
+						cx="139"
+						cy="22"
+						rx="4"
+						ry="2"
+						fill="rgb(211, 216, 225)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M221,74L242,74L242,117L221,117Z"
+						fill="rgb(21, 27, 37)"
+						fill-opacity="0.54"
+					/>
+					<ellipse
+						cx="248"
+						cy="68"
+						rx="5"
+						ry="6"
+						fill="rgb(90, 92, 98)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="212"
+						cy="57"
+						rx="12"
+						ry="2"
+						fill="rgb(121, 124, 138)"
+						fill-opacity="0.47"
+					/>
+					<ellipse
+						cx="234"
+						cy="69"
+						rx="1"
+						ry="31"
+						fill="rgb(38, 46, 60)"
+						fill-opacity="0.71"
+					/>
+					<ellipse
+						cx="126"
+						cy="114"
+						rx="13"
+						ry="3"
+						fill="rgb(22, 29, 37)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="183"
+						cy="4"
+						rx="6"
+						ry="21"
+						fill="rgb(116, 130, 159)"
+						fill-opacity="0.66"
+					/>
+					<ellipse
+						cx="196"
+						cy="86"
+						rx="1"
+						ry="18"
+						fill="rgb(67, 74, 88)"
+						fill-opacity="0.62"
+					/>
+					<ellipse
+						cx="182"
+						cy="51"
+						rx="4"
+						ry="3"
+						fill="rgb(211, 212, 212)"
+						fill-opacity="0.55"
+					/>
+					<ellipse
+						cx="163"
+						cy="97"
+						rx="11"
+						ry="2"
+						fill="rgb(18, 27, 36)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="217"
+						cy="59"
+						rx="1"
+						ry="18"
+						fill="rgb(239, 248, 248)"
+						fill-opacity="0.18"
+					/>
+					<path
+						d="M127,123L176,123L176,127L127,127Z"
+						fill="rgb(9, 10, 17)"
+						fill-opacity="0.59"
+					/>
+					<ellipse
+						cx="31"
+						cy="2"
+						rx="19"
+						ry="2"
+						fill="rgb(70, 98, 144)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="69"
+						cy="50"
+						rx="3"
+						ry="7"
+						fill="rgb(91, 102, 125)"
+						fill-opacity="0.45"
+					/>
+					<ellipse
+						cx="79"
+						cy="47"
+						rx="3"
+						ry="2"
+						fill="rgb(196, 193, 203)"
+						fill-opacity="0.54"
+					/>
+					<ellipse
+						cx="57"
+						cy="93"
+						rx="1"
+						ry="25"
+						fill="rgb(24, 32, 40)"
+						fill-opacity="1.00"
+					/>
+					<ellipse
+						cx="200"
+						cy="46"
+						rx="14"
+						ry="2"
+						fill="rgb(140, 147, 164)"
+						fill-opacity="0.61"
+					/>
+					<ellipse
+						cx="134"
+						cy="102"
+						rx="2"
+						ry="16"
+						fill="rgb(32, 35, 45)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="160"
+						cy="86"
+						rx="1"
+						ry="29"
+						fill="rgb(44, 52, 63)"
+						fill-opacity="0.35"
+					/>
+					<ellipse
+						cx="4"
+						cy="115"
+						rx="16"
+						ry="14"
+						fill="rgb(7, 6, 10)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="15"
+						cy="41"
+						rx="12"
+						ry="6"
+						fill="rgb(77, 85, 103)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="190"
+						cy="58"
+						rx="7"
+						ry="14"
+						fill="rgb(143, 152, 164)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="56"
+						cy="42"
+						rx="2"
+						ry="5"
+						fill="rgb(173, 178, 193)"
+						fill-opacity="0.44"
+					/>
+					<ellipse
+						cx="213"
+						cy="69"
+						rx="7"
+						ry="11"
+						fill="rgb(100, 110, 123)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="212"
+						cy="56"
+						rx="4"
+						ry="13"
+						fill="rgb(125, 134, 161)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="54"
+						cy="56"
+						rx="4"
+						ry="8"
+						fill="rgb(66, 75, 100)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="124"
+						cy="8"
+						rx="8"
+						ry="6"
+						fill="rgb(107, 126, 156)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="30"
+						cy="126"
+						rx="16"
+						ry="5"
+						fill="rgb(25, 23, 31)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M146,30L165,30L165,40L146,40Z"
+						fill="rgb(193, 191, 203)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M144,12L160,12L160,26L144,26Z"
+						fill="rgb(105, 122, 152)"
+						fill-opacity="0.39"
+					/>
+					<ellipse
+						cx="175"
+						cy="17"
+						rx="8"
+						ry="11"
+						fill="rgb(138, 148, 172)"
+						fill-opacity="0.54"
+					/>
+					<ellipse
+						cx="118"
+						cy="67"
+						rx="12"
+						ry="4"
+						fill="rgb(73, 91, 107)"
+						fill-opacity="0.29"
+					/>
+					<ellipse
+						cx="7"
+						cy="58"
+						rx="4"
+						ry="11"
+						fill="rgb(29, 35, 47)"
+						fill-opacity="0.49"
+					/>
+					<ellipse
+						cx="53"
+						cy="23"
+						rx="8"
+						ry="8"
+						fill="rgb(205, 202, 212)"
+						fill-opacity="0.44"
+					/>
+					<ellipse
+						cx="92"
+						cy="53"
+						rx="2"
+						ry="3"
+						fill="rgb(55, 58, 74)"
+						fill-opacity="0.38"
+					/>
+					<ellipse
+						cx="90"
+						cy="1"
+						rx="9"
+						ry="3"
+						fill="rgb(215, 231, 234)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="221"
+						cy="38"
+						rx="1"
+						ry="22"
+						fill="rgb(3, 2, 17)"
+						fill-opacity="0.14"
+					/>
+					<ellipse
+						cx="240"
+						cy="18"
+						rx="9"
+						ry="8"
+						fill="rgb(33, 48, 74)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="87"
+						cy="113"
+						rx="15"
+						ry="16"
+						fill="rgb(12, 16, 23)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="90"
+						cy="42"
+						rx="3"
+						ry="5"
+						fill="rgb(237, 233, 236)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="107"
+						cy="60"
+						rx="4"
+						ry="13"
+						fill="rgb(40, 47, 62)"
+						fill-opacity="0.57"
+					/>
+					<ellipse
+						cx="23"
+						cy="28"
+						rx="6"
+						ry="6"
+						fill="rgb(172, 178, 190)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="92"
+						cy="68"
+						rx="13"
+						ry="3"
+						fill="rgb(61, 67, 86)"
+						fill-opacity="0.52"
+					/>
+					<ellipse
+						cx="146"
+						cy="74"
+						rx="9"
+						ry="3"
+						fill="rgb(118, 125, 139)"
+						fill-opacity="0.51"
+					/>
+					<ellipse
+						cx="226"
+						cy="5"
+						rx="20"
+						ry="7"
+						fill="rgb(50, 66, 99)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="204"
+						cy="49"
+						rx="10"
+						ry="5"
+						fill="rgb(120, 130, 160)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="178"
+						cy="47"
+						rx="3"
+						ry="1"
+						fill="rgb(97, 105, 118)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="219"
+						cy="118"
+						rx="3"
+						ry="10"
+						fill="rgb(14, 13, 18)"
+						fill-opacity="0.57"
+					/>
+					<ellipse
+						cx="211"
+						cy="100"
+						rx="4"
+						ry="5"
+						fill="rgb(19, 21, 30)"
+						fill-opacity="0.44"
+					/>
+					<ellipse
+						cx="200"
+						cy="95"
+						rx="4"
+						ry="11"
+						fill="rgb(31, 38, 52)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="173"
+						cy="98"
+						rx="5"
+						ry="8"
+						fill="rgb(48, 56, 65)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="192"
+						cy="109"
+						rx="7"
+						ry="4"
+						fill="rgb(15, 19, 28)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M126,27L139,27L139,47L126,47Z"
+						fill="rgb(207, 208, 217)"
+						fill-opacity="0.33"
+					/>
+					<ellipse
+						cx="51"
+						cy="71"
+						rx="21"
+						ry="9"
+						fill="rgb(26, 32, 46)"
+						fill-opacity="0.41"
+					/>
+					<ellipse
+						cx="149"
+						cy="101"
+						rx="3"
+						ry="4"
+						fill="rgb(70, 75, 93)"
+						fill-opacity="0.47"
+					/>
+					<ellipse
+						cx="116"
+						cy="25"
+						rx="5"
+						ry="8"
+						fill="rgb(237, 237, 238)"
+						fill-opacity="0.37"
+					/>
+					<ellipse
+						cx="118"
+						cy="80"
+						rx="5"
+						ry="10"
+						fill="rgb(50, 58, 72)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M74,68L77,68L77,122L74,122Z"
+						fill="rgb(24, 30, 40)"
+						fill-opacity="0.80"
+					/>
+					<path
+						d="M217,42L218,42L218,73L217,73Z"
+						fill="rgb(209, 212, 219)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="93"
+						cy="80"
+						rx="2"
+						ry="25"
+						fill="rgb(27, 34, 51)"
+						fill-opacity="0.48"
+					/>
+					<ellipse
+						cx="242"
+						cy="49"
+						rx="8"
+						ry="5"
+						fill="rgb(75, 91, 114)"
+						fill-opacity="0.44"
+					/>
+					<ellipse
+						cx="54"
+						cy="49"
+						rx="20"
+						ry="4"
+						fill="rgb(78, 94, 119)"
+						fill-opacity="0.31"
+					/>
+					<ellipse
+						cx="239"
+						cy="57"
+						rx="22"
+						ry="2"
+						fill="rgb(52, 61, 78)"
+						fill-opacity="0.59"
+					/>
+					<ellipse
+						cx="107"
+						cy="85"
+						rx="5"
+						ry="11"
+						fill="rgb(17, 17, 21)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="184"
+						cy="50"
+						rx="5"
+						ry="2"
+						fill="rgb(200, 202, 204)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="40"
+						cy="66"
+						rx="22"
+						ry="4"
+						fill="rgb(31, 37, 51)"
+						fill-opacity="0.46"
+					/>
+					<ellipse
+						cx="173"
+						cy="20"
+						rx="4"
+						ry="6"
+						fill="rgb(159, 166, 187)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="221"
+						cy="70"
+						rx="1"
+						ry="12"
+						fill="rgb(255, 247, 240)"
+						fill-opacity="0.21"
+					/>
+					<ellipse
+						cx="225"
+						cy="79"
+						rx="1"
+						ry="21"
+						fill="rgb(56, 63, 74)"
+						fill-opacity="0.44"
+					/>
+					<ellipse
+						cx="188"
+						cy="88"
+						rx="1"
+						ry="4"
+						fill="rgb(14, 25, 36)"
+						fill-opacity="0.50"
+					/>
+					<ellipse
+						cx="219"
+						cy="67"
+						rx="1"
+						ry="10"
+						fill="rgb(50, 40, 33)"
+						fill-opacity="0.25"
+					/>
+					<ellipse
+						cx="29"
+						cy="54"
+						rx="20"
+						ry="1"
+						fill="rgb(42, 51, 69)"
+						fill-opacity="0.76"
+					/>
+					<ellipse
+						cx="232"
+						cy="124"
+						rx="7"
+						ry="12"
+						fill="rgb(13, 21, 30)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M0,85L32,85L32,109L0,109Z"
+						fill="rgb(11, 12, 16)"
+						fill-opacity="0.53"
+					/>
+					<ellipse
+						cx="0"
+						cy="19"
+						rx="4"
+						ry="15"
+						fill="rgb(56, 79, 119)"
+						fill-opacity="0.54"
+					/>
+					<ellipse
+						cx="88"
+						cy="20"
+						rx="8"
+						ry="15"
+						fill="rgb(160, 176, 193)"
+						fill-opacity="0.45"
+					/>
+				</svg>
+			)
+		case 'Space Station Alpha':
+			return (
+				<svg
+					preserveAspectRatio="xMidYMin slice"
+					className="background"
+					width="512"
+					height="100%"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 256 144"
+					clip-path="url(#clip)"
+				>
+					<defs>
+						<clipPath id="clip" clipPathUnits="objectBoundingBox">
+							<rect x="0" y="0" width="256" height="144" />
+						</clipPath>
+					</defs>
+					<rect x="0" y="0" width="256" height="144" fill="rgb(46, 72, 82)" />
+					<path
+						d="M-132,75L160,82L159,-68Z"
+						fill="rgb(71, 165, 210)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M132,141L151,83L244,155Z"
+						fill="rgb(199, 137, 79)"
+						fill-opacity="0.71"
+					/>
+					<path
+						d="M237,29L185,17L142,97Z"
+						fill="rgb(41, 126, 145)"
+						fill-opacity="0.70"
+					/>
+					<path
+						d="M177,40L175,26L236,32Z"
+						fill="rgb(34, 198, 191)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M191,97L112,92L138,116Z"
+						fill="rgb(85, 83, 80)"
+						fill-opacity="0.72"
+					/>
+					<path
+						d="M194,166L162,136L206,122Z"
+						fill="rgb(242, 169, 87)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M154,126L165,105L169,151Z"
+						fill="rgb(229, 193, 112)"
+						fill-opacity="0.69"
+					/>
+					<path
+						d="M98,94L149,143L-54,149Z"
+						fill="rgb(26, 21, 22)"
+						fill-opacity="0.67"
+					/>
+					<path
+						d="M127,41L181,49L172,20Z"
+						fill="rgb(66, 64, 56)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M69,-16L107,42L175,16Z"
+						fill="rgb(111, 190, 240)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M150,11L143,32L125,17Z"
+						fill="rgb(162, 209, 234)"
+						fill-opacity="0.86"
+					/>
+					<path
+						d="M226,51L302,112L198,162Z"
+						fill="rgb(39, 22, 17)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M144,57L152,77L126,81Z"
+						fill="rgb(96, 182, 233)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M71,97L28,126L10,100Z"
+						fill="rgb(127, 94, 68)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M55,2L62,41L81,-16Z"
+						fill="rgb(31, 62, 80)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M105,46L55,63L71,32Z"
+						fill="rgb(137, 147, 149)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M129,67L137,55L117,59Z"
+						fill="rgb(30, 38, 9)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M142,142L168,129L156,146Z"
+						fill="rgb(228, 208, 147)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M158,111L136,130L133,115Z"
+						fill="rgb(255, 187, 117)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M117,95L157,91L131,101Z"
+						fill="rgb(139, 148, 142)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M200,-23L224,92L329,32Z"
+						fill="rgb(0, 60, 86)"
+						fill-opacity="0.37"
+					/>
+					<path
+						d="M180,33L159,17L169,35Z"
+						fill="rgb(153, 156, 113)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M169,24L121,66L103,35Z"
+						fill="rgb(35, 87, 116)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M189,93L222,91L204,133Z"
+						fill="rgb(59, 23, 16)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M-32,44L1,80L60,29Z"
+						fill="rgb(24, 90, 109)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M252,25L337,15L150,-20Z"
+						fill="rgb(4, 34, 47)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M206,125L192,143L186,116Z"
+						fill="rgb(246, 165, 94)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M239,62L254,33L154,4Z"
+						fill="rgb(34, 118, 144)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M136,126L160,124L136,136Z"
+						fill="rgb(90, 100, 103)"
+						fill-opacity="0.71"
+					/>
+					<path
+						d="M165,121L186,110L183,132Z"
+						fill="rgb(117, 47, 17)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M28,-20L-9,-115L-2,78Z"
+						fill="rgb(26, 96, 124)"
+						fill-opacity="0.70"
+					/>
+					<path
+						d="M14,101L6,106L31,103Z"
+						fill="rgb(224, 203, 137)"
+						fill-opacity="0.31"
+					/>
+					<path
+						d="M221,33L140,91L212,87Z"
+						fill="rgb(51, 83, 96)"
+						fill-opacity="0.71"
+					/>
+					<path
+						d="M217,132L181,101L169,106Z"
+						fill="rgb(135, 92, 73)"
+						fill-opacity="0.70"
+					/>
+					<path
+						d="M150,28L147,56L162,37Z"
+						fill="rgb(31, 45, 60)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M31,42L14,2L63,17Z"
+						fill="rgb(19, 168, 231)"
+						fill-opacity="0.28"
+					/>
+					<path
+						d="M215,-72L72,13L95,39Z"
+						fill="rgb(68, 153, 200)"
+						fill-opacity="0.85"
+					/>
+					<path
+						d="M137,115L135,128L178,107Z"
+						fill="rgb(214, 164, 110)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M172,32L159,33L178,24Z"
+						fill="rgb(179, 147, 77)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M17,112L88,181L-23,120Z"
+						fill="rgb(33, 32, 32)"
+						fill-opacity="0.68"
+					/>
+					<path
+						d="M113,74L186,93L9,80Z"
+						fill="rgb(56, 89, 104)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M207,59L134,43L133,72Z"
+						fill="rgb(34, 122, 155)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M19,154L135,98L135,143Z"
+						fill="rgb(24, 26, 30)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M221,196L208,125L247,109Z"
+						fill="rgb(72, 42, 35)"
+						fill-opacity="0.73"
+					/>
+					<path
+						d="M10,51L64,58L39,80Z"
+						fill="rgb(36, 104, 126)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M48,98L114,89L121,116Z"
+						fill="rgb(47, 60, 67)"
+						fill-opacity="0.78"
+					/>
+					<path
+						d="M119,20L152,17L142,35Z"
+						fill="rgb(170, 220, 244)"
+						fill-opacity="0.35"
+					/>
+					<path
+						d="M181,65L124,73L142,56Z"
+						fill="rgb(42, 159, 193)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M208,118L385,-16L188,92Z"
+						fill="rgb(27, 44, 48)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M136,28L130,45L125,28Z"
+						fill="rgb(11, 46, 89)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M165,36L183,4L138,-26Z"
+						fill="rgb(45, 101, 130)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M133,86L145,109L158,104Z"
+						fill="rgb(42, 57, 72)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M146,120L151,123L132,124Z"
+						fill="rgb(244, 189, 139)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M67,38L79,51L60,49Z"
+						fill="rgb(152, 170, 179)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M137,19L145,16L139,32Z"
+						fill="rgb(231, 252, 255)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M139,65L117,56L122,65Z"
+						fill="rgb(50, 60, 42)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M81,21L50,67L42,42Z"
+						fill="rgb(89, 123, 136)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M152,101L163,89L143,92Z"
+						fill="rgb(133, 148, 143)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M179,123L174,109L166,125Z"
+						fill="rgb(126, 61, 22)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M-41,116L6,76L30,97Z"
+						fill="rgb(19, 30, 30)"
+						fill-opacity="0.30"
+					/>
+					<path
+						d="M161,146L154,116L145,127Z"
+						fill="rgb(74, 113, 132)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M145,79L126,76L152,69Z"
+						fill="rgb(150, 191, 255)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M178,145L160,158L157,136Z"
+						fill="rgb(91, 125, 130)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M137,95L129,96L131,91Z"
+						fill="rgb(171, 184, 170)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M109,35L130,35L92,10Z"
+						fill="rgb(75, 163, 214)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M177,30L199,31L180,36Z"
+						fill="rgb(44, 227, 217)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M175,31L172,-6L201,18Z"
+						fill="rgb(43, 87, 105)"
+						fill-opacity="0.68"
+					/>
+					<path
+						d="M158,143L157,156L142,126Z"
+						fill="rgb(245, 193, 122)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M10,9L5,30L51,38Z"
+						fill="rgb(39, 136, 179)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M36,116L42,117L45,112Z"
+						fill="rgb(131, 156, 152)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M182,167L197,136L190,126Z"
+						fill="rgb(255, 227, 134)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M124,14L135,23L148,2Z"
+						fill="rgb(131, 186, 220)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M145,17L134,-4L164,12Z"
+						fill="rgb(94, 148, 182)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M168,110L153,113L169,140Z"
+						fill="rgb(252, 189, 83)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M190,117L184,138L173,135Z"
+						fill="rgb(164, 110, 63)"
+						fill-opacity="0.64"
+					/>
+					<path
+						d="M54,102L46,105L70,104Z"
+						fill="rgb(167, 160, 143)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M209,94L186,71L229,66Z"
+						fill="rgb(111, 105, 90)"
+						fill-opacity="0.24"
+					/>
+					<path
+						d="M167,24L166,42L178,22Z"
+						fill="rgb(191, 134, 54)"
+						fill-opacity="0.28"
+					/>
+					<path
+						d="M210,133L194,111L203,153Z"
+						fill="rgb(206, 85, 36)"
+						fill-opacity="0.37"
+					/>
+					<path
+						d="M76,109L23,91L66,89Z"
+						fill="rgb(110, 103, 101)"
+						fill-opacity="0.23"
+					/>
+					<path
+						d="M204,153L208,162L231,135Z"
+						fill="rgb(132, 93, 62)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M158,82L131,85L178,65Z"
+						fill="rgb(71, 99, 120)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M232,64L170,58L222,36Z"
+						fill="rgb(23, 52, 70)"
+						fill-opacity="0.26"
+					/>
+					<path
+						d="M36,39L34,9L59,5Z"
+						fill="rgb(48, 150, 196)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M9,65L-43,94L33,65Z"
+						fill="rgb(38, 130, 160)"
+						fill-opacity="0.71"
+					/>
+					<path
+						d="M150,58L193,49L123,47Z"
+						fill="rgb(41, 103, 131)"
+						fill-opacity="0.81"
+					/>
+					<path
+						d="M187,37L221,32L187,24Z"
+						fill="rgb(37, 192, 186)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M186,-57L210,19L151,0Z"
+						fill="rgb(2, 69, 99)"
+						fill-opacity="0.30"
+					/>
+					<path
+						d="M235,129L266,112L264,158Z"
+						fill="rgb(55, 64, 62)"
+						fill-opacity="0.71"
+					/>
+					<path
+						d="M12,114L31,125L68,116Z"
+						fill="rgb(72, 65, 54)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M201,106L187,109L216,133Z"
+						fill="rgb(88, 55, 55)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M140,69L135,57L152,62Z"
+						fill="rgb(35, 173, 198)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M56,42L38,47L51,40Z"
+						fill="rgb(133, 161, 143)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M166,121L179,133L166,138Z"
+						fill="rgb(199, 133, 53)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M72,118L59,103L33,110Z"
+						fill="rgb(43, 54, 61)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M34,34L49,48L-105,78Z"
+						fill="rgb(41, 101, 122)"
+						fill-opacity="0.68"
+					/>
+					<path
+						d="M202,39L201,59L166,47Z"
+						fill="rgb(39, 98, 120)"
+						fill-opacity="0.76"
+					/>
+					<path
+						d="M94,35L78,43L88,61Z"
+						fill="rgb(131, 155, 142)"
+						fill-opacity="0.34"
+					/>
+					<path
+						d="M137,138L139,122L145,143Z"
+						fill="rgb(84, 81, 81)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M204,26L220,17L153,22Z"
+						fill="rgb(58, 89, 100)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M17,94L-19,95L5,113Z"
+						fill="rgb(32, 44, 51)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M6,28L0,48L-3,-3Z"
+						fill="rgb(26, 72, 92)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M188,70L218,64L188,80Z"
+						fill="rgb(78, 116, 119)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M147,71L139,71L134,83Z"
+						fill="rgb(132, 197, 252)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M58,51L45,51L49,48Z"
+						fill="rgb(133, 170, 162)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M203,81L227,94L228,69Z"
+						fill="rgb(48, 63, 67)"
+						fill-opacity="0.64"
+					/>
+					<path
+						d="M131,25L141,9L160,25Z"
+						fill="rgb(216, 229, 237)"
+						fill-opacity="0.22"
+					/>
+					<path
+						d="M48,105L38,99L48,99Z"
+						fill="rgb(183, 141, 100)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M191,121L173,112L167,127Z"
+						fill="rgb(116, 64, 40)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M69,3L58,1L55,35Z"
+						fill="rgb(33, 81, 102)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M164,113L146,115L176,107Z"
+						fill="rgb(224, 201, 153)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M58,4L-62,28L58,-15Z"
+						fill="rgb(27, 104, 140)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M148,41L173,33L178,45Z"
+						fill="rgb(65, 54, 42)"
+						fill-opacity="0.63"
+					/>
+					<path
+						d="M88,101L101,101L98,99Z"
+						fill="rgb(142, 152, 146)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M175,102L190,115L190,109Z"
+						fill="rgb(153, 162, 155)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M94,35L73,20L134,20Z"
+						fill="rgb(77, 162, 210)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M147,79L131,81L155,69Z"
+						fill="rgb(136, 165, 231)"
+						fill-opacity="0.33"
+					/>
+					<path
+						d="M75,14L78,-18L93,5Z"
+						fill="rgb(75, 138, 181)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M126,40L147,44L127,28Z"
+						fill="rgb(26, 66, 107)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M155,133L164,113L163,139Z"
+						fill="rgb(238, 204, 118)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M112,117L171,102L105,100Z"
+						fill="rgb(61, 57, 57)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M212,114L218,117L210,118Z"
+						fill="rgb(94, 79, 72)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M268,15L257,-41L227,-3Z"
+						fill="rgb(1, 20, 23)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M82,40L35,39L76,15Z"
+						fill="rgb(65, 101, 127)"
+						fill-opacity="0.36"
+					/>
+					<path
+						d="M72,69L56,39L58,76Z"
+						fill="rgb(57, 112, 136)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M87,46L111,33L113,59Z"
+						fill="rgb(56, 113, 138)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M22,90L-14,90L39,94Z"
+						fill="rgb(86, 101, 94)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M152,84L205,103L174,103Z"
+						fill="rgb(65, 72, 78)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M104,72L93,59L121,56Z"
+						fill="rgb(41, 159, 201)"
+						fill-opacity="0.32"
+					/>
+					<path
+						d="M43,41L50,45L59,41Z"
+						fill="rgb(138, 168, 154)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M136,81L126,68L116,78Z"
+						fill="rgb(84, 126, 156)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M113,33L122,36L144,-12Z"
+						fill="rgb(95, 165, 210)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M136,118L133,129L149,116Z"
+						fill="rgb(209, 139, 87)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M71,55L63,43L78,41Z"
+						fill="rgb(146, 170, 181)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M144,128L150,144L139,174Z"
+						fill="rgb(173, 82, 50)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M263,80L237,59L252,118Z"
+						fill="rgb(20, 39, 44)"
+						fill-opacity="0.64"
+					/>
+					<path
+						d="M50,102L48,100L86,101Z"
+						fill="rgb(35, 50, 56)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M166,17L145,36L138,29Z"
+						fill="rgb(82, 132, 154)"
+						fill-opacity="0.37"
+					/>
+					<path
+						d="M81,42L96,44L87,39Z"
+						fill="rgb(151, 177, 166)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M193,129L189,135L193,136Z"
+						fill="rgb(254, 254, 202)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M235,127L226,142L233,113Z"
+						fill="rgb(95, 64, 48)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M214,126L213,150L230,126Z"
+						fill="rgb(55, 33, 31)"
+						fill-opacity="0.73"
+					/>
+					<path
+						d="M-1,80L31,78L36,89Z"
+						fill="rgb(27, 60, 68)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M186,116L162,110L191,114Z"
+						fill="rgb(200, 135, 81)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M33,53L75,0L76,17Z"
+						fill="rgb(53, 103, 128)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M174,124L174,113L168,117Z"
+						fill="rgb(112, 51, 17)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M6,115L30,115L12,105Z"
+						fill="rgb(91, 88, 80)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M43,117L28,111L46,114Z"
+						fill="rgb(131, 144, 136)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M137,132L128,142L147,157Z"
+						fill="rgb(38, 34, 38)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M62,64L10,45L40,47Z"
+						fill="rgb(59, 119, 139)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M213,37L178,42L214,31Z"
+						fill="rgb(27, 154, 165)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M166,141L154,129L164,129Z"
+						fill="rgb(238, 210, 137)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M1,55L10,63L22,60Z"
+						fill="rgb(40, 83, 93)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M123,100L128,100L116,93Z"
+						fill="rgb(127, 126, 111)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M55,26L36,37L58,-4Z"
+						fill="rgb(58, 155, 200)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M243,125L247,130L241,132Z"
+						fill="rgb(134, 94, 63)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M121,37L112,45L137,45Z"
+						fill="rgb(71, 132, 159)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M90,34L94,45L116,38Z"
+						fill="rgb(61, 111, 136)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M170,73L165,48L189,61Z"
+						fill="rgb(60, 108, 133)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M203,26L149,-9L163,17Z"
+						fill="rgb(38, 104, 134)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M122,121L105,123L124,119Z"
+						fill="rgb(50, 69, 81)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M166,139L183,160L127,169Z"
+						fill="rgb(101, 113, 115)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M145,75L154,77L176,62Z"
+						fill="rgb(88, 124, 159)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M236,48L233,57L215,27Z"
+						fill="rgb(34, 110, 137)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M34,113L64,110L44,110Z"
+						fill="rgb(82, 86, 91)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M176,130L171,144L160,128Z"
+						fill="rgb(230, 173, 83)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M132,112L180,103L151,114Z"
+						fill="rgb(137, 112, 88)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M150,79L196,69L170,93Z"
+						fill="rgb(35, 70, 87)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M155,-2L98,9L88,-27Z"
+						fill="rgb(59, 139, 182)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M207,88L210,74L198,82Z"
+						fill="rgb(100, 100, 92)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M294,55L227,4L206,19Z"
+						fill="rgb(20, 72, 95)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M96,111L138,104L133,128Z"
+						fill="rgb(40, 44, 52)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M252,27L252,65L235,60Z"
+						fill="rgb(24, 70, 95)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M47,58L75,78L39,78Z"
+						fill="rgb(44, 124, 153)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M184,22L174,19L173,37Z"
+						fill="rgb(75, 98, 94)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M31,113L30,121L23,124Z"
+						fill="rgb(150, 80, 26)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M34,54L35,45L40,52Z"
+						fill="rgb(102, 154, 164)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M114,110L120,89L106,101Z"
+						fill="rgb(58, 69, 74)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M180,124L188,130L182,107Z"
+						fill="rgb(109, 51, 33)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M225,116L240,105L241,119Z"
+						fill="rgb(38, 28, 29)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M143,43L157,29L175,45Z"
+						fill="rgb(47, 48, 50)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M69,78L87,78L66,102Z"
+						fill="rgb(37, 65, 79)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M103,42L122,40L56,76Z"
+						fill="rgb(72, 124, 146)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M157,20L144,19L137,2Z"
+						fill="rgb(120, 174, 205)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M204,30L174,35L209,36Z"
+						fill="rgb(26, 203, 204)"
+						fill-opacity="0.32"
+					/>
+					<path
+						d="M84,27L81,56L69,21Z"
+						fill="rgb(73, 113, 138)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M186,103L188,98L197,107Z"
+						fill="rgb(117, 107, 102)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M233,123L237,132L244,122Z"
+						fill="rgb(44, 27, 24)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M118,62L136,65L130,58Z"
+						fill="rgb(39, 52, 41)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M179,52L178,36L195,37Z"
+						fill="rgb(42, 127, 136)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M143,92L170,100L162,91Z"
+						fill="rgb(141, 146, 136)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M79,91L55,94L49,91Z"
+						fill="rgb(97, 115, 120)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M76,118L76,114L55,117Z"
+						fill="rgb(56, 75, 76)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M145,68L164,55L174,67Z"
+						fill="rgb(47, 124, 158)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M34,53L41,65L7,57Z"
+						fill="rgb(35, 99, 120)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M113,84L123,75L87,80Z"
+						fill="rgb(73, 104, 123)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M118,97L137,94L128,93Z"
+						fill="rgb(160, 160, 136)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M123,62L78,75L132,73Z"
+						fill="rgb(45, 131, 164)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M176,-1L181,-15L277,35Z"
+						fill="rgb(22, 60, 75)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M248,95L233,108L225,112Z"
+						fill="rgb(94, 97, 82)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M159,136L151,126L144,130Z"
+						fill="rgb(79, 96, 101)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M11,24L15,52L8,32Z"
+						fill="rgb(30, 93, 118)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M229,83L193,103L218,106Z"
+						fill="rgb(26, 41, 47)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M149,79L134,87L127,81Z"
+						fill="rgb(65, 100, 122)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M197,25L186,35L218,25Z"
+						fill="rgb(40, 156, 155)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M259,110L299,126L230,154Z"
+						fill="rgb(42, 61, 66)"
+						fill-opacity="0.75"
+					/>
+					<path
+						d="M18,5L11,29L56,4Z"
+						fill="rgb(40, 128, 168)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M205,49L225,38L230,87Z"
+						fill="rgb(31, 61, 70)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M234,127L224,126L226,115Z"
+						fill="rgb(96, 38, 37)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M113,52L129,59L129,56Z"
+						fill="rgb(49, 132, 159)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M139,120L166,112L185,112Z"
+						fill="rgb(185, 123, 61)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M35,120L30,125L32,110Z"
+						fill="rgb(48, 45, 42)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M44,110L55,187L57,113Z"
+						fill="rgb(16, 25, 31)"
+						fill-opacity="0.31"
+					/>
+					<path
+						d="M174,140L179,109L178,139Z"
+						fill="rgb(167, 111, 59)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M28,109L24,101L30,102Z"
+						fill="rgb(134, 110, 72)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M131,104L135,102L125,92Z"
+						fill="rgb(90, 87, 77)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M81,74L64,63L84,43Z"
+						fill="rgb(81, 129, 152)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M162,21L169,21L165,43Z"
+						fill="rgb(84, 77, 64)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M7,78L35,78L27,59Z"
+						fill="rgb(37, 128, 156)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M220,95L201,96L217,72Z"
+						fill="rgb(51, 64, 67)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M176,26L180,43L182,31Z"
+						fill="rgb(97, 212, 209)"
+						fill-opacity="0.29"
+					/>
+					<path
+						d="M76,24L76,13L87,22Z"
+						fill="rgb(88, 162, 206)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M79,66L89,59L87,72Z"
+						fill="rgb(71, 149, 181)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M100,76L119,80L93,91Z"
+						fill="rgb(64, 98, 115)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M154,116L148,118L159,129Z"
+						fill="rgb(127, 114, 107)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M167,133L163,113L158,125Z"
+						fill="rgb(238, 185, 85)"
+						fill-opacity="0.64"
+					/>
+					<path
+						d="M154,138L147,131L142,132Z"
+						fill="rgb(251, 186, 107)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M49,58L51,77L48,73Z"
+						fill="rgb(59, 153, 189)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M190,116L185,115L190,129Z"
+						fill="rgb(202, 156, 113)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M210,62L193,79L188,77Z"
+						fill="rgb(78, 115, 118)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M166,92L171,101L179,90Z"
+						fill="rgb(84, 87, 91)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M119,115L119,109L111,105Z"
+						fill="rgb(72, 86, 87)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M36,121L39,112L31,124Z"
+						fill="rgb(94, 94, 87)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M233,106L230,109L226,111Z"
+						fill="rgb(129, 118, 102)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M189,77L164,75L206,51Z"
+						fill="rgb(48, 96, 115)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M0,114L40,111L51,100Z"
+						fill="rgb(68, 68, 62)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M137,61L134,68L147,61Z"
+						fill="rgb(36, 180, 207)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M179,86L179,106L194,91Z"
+						fill="rgb(32, 56, 70)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M232,76L222,86L226,73Z"
+						fill="rgb(55, 71, 74)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M134,-16L86,34L120,36Z"
+						fill="rgb(74, 159, 209)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M253,103L245,120L249,121Z"
+						fill="rgb(28, 25, 18)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M244,135L242,132L218,161Z"
+						fill="rgb(22, 26, 29)"
+						fill-opacity="0.68"
+					/>
+					<path
+						d="M161,24L135,-6L167,11Z"
+						fill="rgb(73, 125, 159)"
+						fill-opacity="0.28"
+					/>
+					<path
+						d="M182,126L167,130L167,123Z"
+						fill="rgb(143, 81, 31)"
+						fill-opacity="0.34"
+					/>
+					<path
+						d="M145,17L132,17L138,8Z"
+						fill="rgb(143, 198, 230)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M90,53L80,49L93,47Z"
+						fill="rgb(139, 175, 162)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M17,102L14,108L11,101Z"
+						fill="rgb(149, 172, 166)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M217,100L216,116L235,121Z"
+						fill="rgb(39, 30, 34)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M13,78L29,88L20,92Z"
+						fill="rgb(34, 57, 63)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M57,67L46,79L58,73Z"
+						fill="rgb(47, 140, 176)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M149,119L146,116L144,127Z"
+						fill="rgb(222, 190, 127)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M153,92L140,92L169,78Z"
+						fill="rgb(62, 87, 101)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M76,39L82,21L86,37Z"
+						fill="rgb(70, 114, 138)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M181,113L169,107L179,115Z"
+						fill="rgb(218, 140, 78)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M130,71L126,73L139,80Z"
+						fill="rgb(100, 148, 190)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M63,117L54,116L73,116Z"
+						fill="rgb(121, 148, 144)"
+						fill-opacity="0.35"
+					/>
+					<path
+						d="M171,103L178,103L151,110Z"
+						fill="rgb(143, 134, 116)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M166,35L174,27L169,27Z"
+						fill="rgb(193, 167, 92)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M64,20L56,-1L74,-9Z"
+						fill="rgb(31, 76, 96)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M116,108L109,97L117,114Z"
+						fill="rgb(86, 96, 96)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M13,102L0,112L2,122Z"
+						fill="rgb(46, 49, 50)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M113,90L78,84L83,75Z"
+						fill="rgb(59, 91, 105)"
+						fill-opacity="0.64"
+					/>
+					<path
+						d="M150,33L165,29L147,25Z"
+						fill="rgb(49, 90, 110)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M199,129L191,117L190,124Z"
+						fill="rgb(205, 118, 71)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M49,59L37,36L46,80Z"
+						fill="rgb(50, 107, 130)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M138,31L121,16L144,29Z"
+						fill="rgb(119, 188, 227)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M206,119L208,147L215,129Z"
+						fill="rgb(102, 48, 38)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M16,38L8,21L34,27Z"
+						fill="rgb(39, 132, 171)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M231,133L224,143L218,142Z"
+						fill="rgb(125, 88, 61)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M129,58L119,53L121,59Z"
+						fill="rgb(60, 141, 153)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M197,120L186,112L184,113Z"
+						fill="rgb(119, 76, 46)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M173,46L153,38L162,47Z"
+						fill="rgb(52, 46, 37)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M159,20L165,22L150,28Z"
+						fill="rgb(107, 126, 133)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M111,58L136,74L91,58Z"
+						fill="rgb(57, 146, 189)"
+						fill-opacity="0.34"
+					/>
+					<path
+						d="M151,115L146,115L164,111Z"
+						fill="rgb(235, 213, 172)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M193,137L206,173L200,122Z"
+						fill="rgb(240, 151, 76)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M157,123L158,131L164,129Z"
+						fill="rgb(239, 206, 122)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M183,94L178,90L196,84Z"
+						fill="rgb(34, 61, 72)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M228,125L229,142L236,118Z"
+						fill="rgb(94, 64, 49)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M188,26L191,32L193,23Z"
+						fill="rgb(66, 175, 172)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M204,120L192,99L194,116Z"
+						fill="rgb(78, 69, 73)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M248,102L233,87L255,101Z"
+						fill="rgb(21, 31, 33)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M10,-4L-2,-28L-4,41Z"
+						fill="rgb(7, 21, 37)"
+						fill-opacity="0.10"
+					/>
+					<path
+						d="M160,100L183,100L163,103Z"
+						fill="rgb(79, 67, 62)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M108,64L128,64L114,72Z"
+						fill="rgb(51, 139, 177)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M134,122L135,131L139,138Z"
+						fill="rgb(137, 111, 85)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M203,127L208,126L206,147Z"
+						fill="rgb(157, 74, 48)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M77,104L80,111L46,82Z"
+						fill="rgb(49, 65, 71)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M138,30L135,34L147,32Z"
+						fill="rgb(69, 161, 192)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M144,125L136,116L133,125Z"
+						fill="rgb(252, 154, 105)"
+						fill-opacity="0.21"
+					/>
+					<path
+						d="M42,123L36,123L42,115Z"
+						fill="rgb(85, 83, 79)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M123,71L133,81L105,82Z"
+						fill="rgb(77, 113, 136)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M243,100L248,87L235,106Z"
+						fill="rgb(72, 79, 66)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M143,93L160,93L150,92Z"
+						fill="rgb(205, 212, 197)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M140,118L175,109L160,111Z"
+						fill="rgb(227, 193, 137)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M48,87L49,102L30,86Z"
+						fill="rgb(53, 60, 63)"
+						fill-opacity="0.35"
+					/>
+					<path
+						d="M240,113L249,108L240,115Z"
+						fill="rgb(76, 79, 64)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M232,91L202,83L240,84Z"
+						fill="rgb(46, 63, 66)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M248,63L269,-1L263,93Z"
+						fill="rgb(17, 55, 73)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M63,93L69,93L63,90Z"
+						fill="rgb(143, 161, 164)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M178,140L192,151L177,144Z"
+						fill="rgb(235, 200, 127)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M228,19L211,21L244,41Z"
+						fill="rgb(30, 92, 111)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M179,102L188,109L174,103Z"
+						fill="rgb(164, 166, 158)"
+						fill-opacity="0.37"
+					/>
+					<path
+						d="M49,76L50,88L52,84Z"
+						fill="rgb(63, 107, 128)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M224,106L206,119L195,103Z"
+						fill="rgb(49, 37, 39)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M153,28L160,26L154,11Z"
+						fill="rgb(107, 140, 158)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M172,38L170,33L158,28Z"
+						fill="rgb(115, 86, 45)"
+						fill-opacity="0.36"
+					/>
+					<path
+						d="M21,163L31,117L45,145Z"
+						fill="rgb(30, 31, 35)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M105,87L74,93L69,112Z"
+						fill="rgb(36, 57, 63)"
+						fill-opacity="0.44"
+					/>
+				</svg>
+			)
+		case 'Ethereal Plane':
+			return (
+				<svg
+					preserveAspectRatio="xMidYMin slice"
+					className="background"
+					width="512"
+					height="100%"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 256 113.76"
+					clip-path="url(#clip)"
+				>
+					<defs>
+						<clipPath id="clip" clipPathUnits="objectBoundingBox">
+							<rect x="0" y="0" width="256" height="113.76" />
+						</clipPath>
+					</defs>
+					<rect
+						x="0"
+						y="0"
+						width="256"
+						height="113.76"
+						fill="rgb(91, 112, 118)"
+					/>
+					<path
+						d="M218,-131L20,47L239,105Z"
+						fill="rgb(172, 190, 199)"
+						fill-opacity="0.86"
+					/>
+					<path
+						d="M111,65L219,82L175,259Z"
+						fill="rgb(148, 169, 179)"
+						fill-opacity="0.95"
+					/>
+					<path
+						d="M121,49L170,8L94,-6Z"
+						fill="rgb(249, 251, 255)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M-11,-71L3,157L21,65Z"
+						fill="rgb(12, 34, 37)"
+						fill-opacity="0.69"
+					/>
+					<path
+						d="M7,102L114,87L25,150Z"
+						fill="rgb(15, 36, 31)"
+						fill-opacity="0.70"
+					/>
+					<path
+						d="M212,128L224,38L256,138Z"
+						fill="rgb(0, 14, 9)"
+						fill-opacity="0.25"
+					/>
+					<path
+						d="M100,18L46,66L151,106Z"
+						fill="rgb(89, 116, 127)"
+						fill-opacity="0.67"
+					/>
+					<path
+						d="M43,77L67,40L24,31Z"
+						fill="rgb(240, 247, 253)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M209,93L228,193L170,112Z"
+						fill="rgb(236, 241, 243)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M167,32L136,74L200,69Z"
+						fill="rgb(226, 233, 238)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M92,8L36,44L82,44Z"
+						fill="rgb(224, 231, 236)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M100,78L95,42L51,109Z"
+						fill="rgb(61, 86, 88)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M195,100L107,119L131,60Z"
+						fill="rgb(134, 156, 168)"
+						fill-opacity="0.76"
+					/>
+					<path
+						d="M161,32L142,54L132,36Z"
+						fill="rgb(78, 111, 128)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M229,7L233,4L226,0Z"
+						fill="rgb(7, 32, 45)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M102,-34L70,28L12,35Z"
+						fill="rgb(104, 134, 151)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M38,53L21,20L19,42Z"
+						fill="rgb(166, 186, 195)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M244,17L157,100L199,-6Z"
+						fill="rgb(192, 208, 217)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M236,10L276,-47L266,61Z"
+						fill="rgb(36, 60, 71)"
+						fill-opacity="0.83"
+					/>
+					<path
+						d="M37,83L50,99L11,80Z"
+						fill="rgb(132, 171, 178)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M6,7L13,10L7,-67Z"
+						fill="rgb(18, 42, 49)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M195,93L234,12L262,92Z"
+						fill="rgb(120, 150, 164)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M11,-10L4,39L47,4Z"
+						fill="rgb(68, 96, 108)"
+						fill-opacity="0.85"
+					/>
+					<path
+						d="M15,87L35,90L33,82Z"
+						fill="rgb(164, 208, 231)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M164,39L177,16L196,25Z"
+						fill="rgb(80, 111, 131)"
+						fill-opacity="0.36"
+					/>
+					<path
+						d="M261,156L209,104L235,102Z"
+						fill="rgb(0, 17, 15)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M215,6L235,7L240,61Z"
+						fill="rgb(133, 156, 168)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M134,59L183,84L168,50Z"
+						fill="rgb(228, 234, 237)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M19,109L28,46L-1,118Z"
+						fill="rgb(64, 94, 91)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M27,96L69,42L92,70Z"
+						fill="rgb(100, 129, 135)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M17,19L-5,79L19,34Z"
+						fill="rgb(2, 19, 32)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M121,34L86,14L105,56Z"
+						fill="rgb(122, 148, 160)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M118,105L67,116L82,99Z"
+						fill="rgb(64, 93, 108)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M80,101L34,134L44,103Z"
+						fill="rgb(0, 8, 2)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M50,29L83,38L92,10Z"
+						fill="rgb(212, 222, 228)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M127,81L124,114L135,84Z"
+						fill="rgb(198, 212, 220)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M181,35L214,15L225,58Z"
+						fill="rgb(249, 253, 255)"
+						fill-opacity="0.22"
+					/>
+					<path
+						d="M98,-12L129,56L132,16Z"
+						fill="rgb(228, 233, 236)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M213,110L183,109L233,121Z"
+						fill="rgb(254, 254, 255)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M6,108L-56,37L14,42Z"
+						fill="rgb(16, 33, 38)"
+						fill-opacity="0.76"
+					/>
+					<path
+						d="M38,-20L48,27L69,14Z"
+						fill="rgb(94, 124, 137)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M19,58L42,56L8,38Z"
+						fill="rgb(75, 100, 114)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M78,60L109,11L90,20Z"
+						fill="rgb(96, 123, 136)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M11,98L88,102L18,90Z"
+						fill="rgb(63, 91, 86)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M121,65L202,20L142,22Z"
+						fill="rgb(109, 136, 153)"
+						fill-opacity="0.28"
+					/>
+					<path
+						d="M186,80L224,97L194,103Z"
+						fill="rgb(178, 198, 204)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M100,97L129,76L102,109Z"
+						fill="rgb(60, 89, 98)"
+						fill-opacity="0.67"
+					/>
+					<path
+						d="M34,64L53,78L47,56Z"
+						fill="rgb(154, 177, 188)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M113,89L56,91L85,104Z"
+						fill="rgb(10, 29, 34)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M111,80L67,84L66,88Z"
+						fill="rgb(5, 27, 31)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M3,78L21,64L44,82Z"
+						fill="rgb(37, 66, 81)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M119,114L126,83L119,75Z"
+						fill="rgb(86, 115, 126)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M105,58L131,65L114,45Z"
+						fill="rgb(97, 122, 134)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M147,88L128,102L159,106Z"
+						fill="rgb(90, 121, 134)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M114,70L83,79L93,55Z"
+						fill="rgb(27, 51, 72)"
+						fill-opacity="0.24"
+					/>
+					<path
+						d="M149,14L104,34L135,6Z"
+						fill="rgb(232, 236, 239)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M233,6L277,60L264,28Z"
+						fill="rgb(21, 42, 50)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M43,68L67,44L27,28Z"
+						fill="rgb(221, 227, 232)"
+						fill-opacity="0.36"
+					/>
+					<path
+						d="M222,20L242,27L233,9Z"
+						fill="rgb(154, 176, 188)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M62,66L66,84L41,88Z"
+						fill="rgb(120, 148, 145)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M268,109L237,93L212,100Z"
+						fill="rgb(102, 130, 114)"
+						fill-opacity="0.70"
+					/>
+					<path
+						d="M233,94L261,96L254,100Z"
+						fill="rgb(53, 87, 79)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M178,9L164,21L127,16Z"
+						fill="rgb(221, 230, 236)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M120,80L118,58L111,62Z"
+						fill="rgb(206, 221, 234)"
+						fill-opacity="0.28"
+					/>
+					<path
+						d="M226,47L242,15L251,30Z"
+						fill="rgb(110, 137, 150)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M47,24L50,9L-8,-17Z"
+						fill="rgb(37, 69, 84)"
+						fill-opacity="0.30"
+					/>
+					<path
+						d="M301,129L233,183L240,104Z"
+						fill="rgb(2, 19, 14)"
+						fill-opacity="0.31"
+					/>
+					<path
+						d="M144,57L157,62L140,76Z"
+						fill="rgb(232, 237, 240)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M117,101L118,90L111,97Z"
+						fill="rgb(155, 184, 199)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M23,13L17,31L43,37Z"
+						fill="rgb(120, 148, 160)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M38,111L30,110L33,92Z"
+						fill="rgb(86, 112, 96)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M29,65L48,80L53,59Z"
+						fill="rgb(126, 154, 166)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M111,88L106,84L97,86Z"
+						fill="rgb(187, 204, 205)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M92,20L103,27L97,39Z"
+						fill="rgb(71, 101, 113)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M46,93L42,110L61,91Z"
+						fill="rgb(36, 63, 49)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M237,58L262,109L285,29Z"
+						fill="rgb(82, 111, 126)"
+						fill-opacity="0.71"
+					/>
+					<path
+						d="M190,63L205,92L210,72Z"
+						fill="rgb(117, 144, 155)"
+						fill-opacity="0.33"
+					/>
+					<path
+						d="M165,105L190,109L151,117Z"
+						fill="rgb(175, 192, 203)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M45,67L72,45L81,54Z"
+						fill="rgb(74, 106, 117)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M207,32L226,50L172,88Z"
+						fill="rgb(171, 191, 199)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M251,-18L223,-1L246,20Z"
+						fill="rgb(57, 84, 97)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M34,84L11,88L22,83Z"
+						fill="rgb(124, 157, 175)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M72,35L91,55L84,65Z"
+						fill="rgb(133, 155, 164)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M51,54L58,74L74,56Z"
+						fill="rgb(81, 112, 124)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M225,96L212,96L226,86Z"
+						fill="rgb(162, 186, 192)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M113,108L119,123L119,99Z"
+						fill="rgb(170, 188, 199)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M98,44L108,18L121,33Z"
+						fill="rgb(169, 187, 195)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M105,18L117,-21L80,13Z"
+						fill="rgb(178, 195, 206)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M3,28L18,-4L13,29Z"
+						fill="rgb(103, 129, 139)"
+						fill-opacity="0.35"
+					/>
+					<path
+						d="M71,28L50,-3L112,-9Z"
+						fill="rgb(137, 161, 174)"
+						fill-opacity="0.30"
+					/>
+					<path
+						d="M154,33L157,52L171,32Z"
+						fill="rgb(170, 188, 197)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M185,105L192,86L173,91Z"
+						fill="rgb(108, 137, 150)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M226,15L183,56L171,40Z"
+						fill="rgb(203, 215, 221)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M91,87L66,103L92,100Z"
+						fill="rgb(12, 28, 34)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M126,8L131,1L115,-5Z"
+						fill="rgb(143, 167, 179)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M171,107L129,65L176,81Z"
+						fill="rgb(149, 169, 180)"
+						fill-opacity="0.66"
+					/>
+					<path
+						d="M42,109L20,111L30,108Z"
+						fill="rgb(134, 154, 125)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M264,42L241,25L254,45Z"
+						fill="rgb(35, 61, 74)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M82,74L86,65L67,74Z"
+						fill="rgb(123, 142, 148)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M107,59L106,33L113,56Z"
+						fill="rgb(75, 106, 117)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M57,102L73,101L59,80Z"
+						fill="rgb(82, 109, 100)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M33,91L39,83L26,84Z"
+						fill="rgb(169, 207, 219)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M17,117L31,103L28,90Z"
+						fill="rgb(0, 22, 30)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M92,47L109,40L106,64Z"
+						fill="rgb(128, 152, 161)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M198,96L231,126L168,139Z"
+						fill="rgb(237, 239, 242)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M39,34L0,-12L51,28Z"
+						fill="rgb(80, 109, 121)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M66,88L73,75L62,88Z"
+						fill="rgb(47, 73, 72)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M119,78L107,69L82,81Z"
+						fill="rgb(95, 122, 130)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M27,35L19,50L22,36Z"
+						fill="rgb(159, 178, 187)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M55,78L10,87L17,80Z"
+						fill="rgb(76, 109, 124)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M175,68L137,70L147,60Z"
+						fill="rgb(243, 245, 246)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M138,-11L203,19L129,1Z"
+						fill="rgb(169, 187, 199)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M133,42L150,48L157,24Z"
+						fill="rgb(109, 137, 149)"
+						fill-opacity="0.63"
+					/>
+					<path
+						d="M72,47L64,60L67,41Z"
+						fill="rgb(102, 130, 141)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M10,100L10,110L-6,101Z"
+						fill="rgb(37, 67, 46)"
+						fill-opacity="0.63"
+					/>
+					<path
+						d="M87,24L71,30L83,38Z"
+						fill="rgb(252, 252, 251)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M229,25L264,51L229,50Z"
+						fill="rgb(119, 149, 162)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M144,82L154,87L170,71Z"
+						fill="rgb(185, 201, 213)"
+						fill-opacity="0.33"
+					/>
+					<path
+						d="M28,75L23,64L39,72Z"
+						fill="rgb(56, 92, 108)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M150,61L163,34L144,57Z"
+						fill="rgb(173, 191, 200)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M74,90L96,98L116,90Z"
+						fill="rgb(25, 46, 51)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M123,55L125,35L135,58Z"
+						fill="rgb(196, 209, 214)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M142,73L159,72L134,63Z"
+						fill="rgb(168, 185, 193)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M119,16L110,21L137,29Z"
+						fill="rgb(251, 253, 255)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M118,72L115,96L114,45Z"
+						fill="rgb(153, 175, 190)"
+						fill-opacity="0.33"
+					/>
+					<path
+						d="M227,0L198,-22L249,21Z"
+						fill="rgb(28, 51, 58)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M255,48L283,14L249,13Z"
+						fill="rgb(0, 17, 26)"
+						fill-opacity="0.26"
+					/>
+					<path
+						d="M96,13L95,54L85,44Z"
+						fill="rgb(87, 115, 127)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M134,29L120,30L138,38Z"
+						fill="rgb(179, 195, 204)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M109,44L121,44L114,52Z"
+						fill="rgb(154, 174, 187)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M213,106L215,102L209,102Z"
+						fill="rgb(43, 57, 51)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M185,74L180,88L154,72Z"
+						fill="rgb(181, 198, 207)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M105,90L114,85L91,84Z"
+						fill="rgb(143, 163, 168)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M40,58L37,33L63,45Z"
+						fill="rgb(229, 233, 235)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M221,48L228,56L228,44Z"
+						fill="rgb(164, 185, 193)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M62,77L78,78L42,78Z"
+						fill="rgb(56, 84, 87)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M240,8L203,-47L230,3Z"
+						fill="rgb(123, 153, 169)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M19,106L16,112L8,86Z"
+						fill="rgb(78, 110, 93)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M61,88L56,87L77,83Z"
+						fill="rgb(27, 51, 55)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M42,94L38,91L48,91Z"
+						fill="rgb(177, 195, 169)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M50,33L67,43L73,35Z"
+						fill="rgb(164, 183, 193)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M74,61L78,36L64,59Z"
+						fill="rgb(81, 111, 121)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M224,69L201,85L190,79Z"
+						fill="rgb(122, 149, 158)"
+						fill-opacity="0.63"
+					/>
+					<path
+						d="M249,3L269,3L275,-49Z"
+						fill="rgb(72, 102, 117)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M194,85L267,88L231,93Z"
+						fill="rgb(123, 149, 158)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M240,77L210,79L242,30Z"
+						fill="rgb(117, 144, 154)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M145,56L133,62L130,55Z"
+						fill="rgb(193, 207, 215)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M185,52L193,61L176,59Z"
+						fill="rgb(168, 188, 195)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M144,69L135,83L132,69Z"
+						fill="rgb(163, 181, 191)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M126,61L116,77L126,87Z"
+						fill="rgb(96, 121, 134)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M202,14L180,17L184,36Z"
+						fill="rgb(144, 164, 177)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M10,6L20,-13L-6,-13Z"
+						fill="rgb(19, 39, 43)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M134,89L126,100L126,83Z"
+						fill="rgb(178, 195, 204)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M151,2L162,-8L145,14Z"
+						fill="rgb(219, 229, 235)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M183,101L197,99L185,108Z"
+						fill="rgb(166, 184, 195)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M40,65L34,50L15,40Z"
+						fill="rgb(95, 121, 135)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M31,96L48,100L32,87Z"
+						fill="rgb(101, 132, 114)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M109,8L88,17L106,24Z"
+						fill="rgb(132, 156, 170)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M165,77L179,65L162,32Z"
+						fill="rgb(220, 228, 232)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M23,104L44,99L65,107Z"
+						fill="rgb(21, 41, 37)"
+						fill-opacity="0.63"
+					/>
+					<path
+						d="M77,103L81,109L91,103Z"
+						fill="rgb(84, 110, 123)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M232,15L226,2L239,18Z"
+						fill="rgb(169, 188, 198)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M20,42L20,58L11,33Z"
+						fill="rgb(48, 73, 82)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M74,94L73,87L63,94Z"
+						fill="rgb(78, 107, 95)"
+						fill-opacity="0.58"
+					/>
+					<path
+						d="M60,55L62,67L52,71Z"
+						fill="rgb(51, 84, 95)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M77,80L93,81L94,77Z"
+						fill="rgb(119, 139, 137)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M210,92L217,103L195,93Z"
+						fill="rgb(168, 188, 193)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M65,45L66,63L60,69Z"
+						fill="rgb(108, 135, 144)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M5,14L-4,25L2,4Z"
+						fill="rgb(10, 25, 33)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M234,140L248,107L212,101Z"
+						fill="rgb(16, 38, 42)"
+						fill-opacity="0.30"
+					/>
+					<path
+						d="M151,17L152,-31L165,-9Z"
+						fill="rgb(157, 178, 188)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M111,3L98,14L102,3Z"
+						fill="rgb(219, 227, 232)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M123,62L131,56L123,90Z"
+						fill="rgb(103, 127, 139)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M140,48L136,58L159,46Z"
+						fill="rgb(156, 175, 186)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M229,74L247,97L236,55Z"
+						fill="rgb(110, 138, 149)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M153,25L149,38L182,30Z"
+						fill="rgb(128, 152, 165)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M126,65L118,64L130,59Z"
+						fill="rgb(82, 108, 123)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M45,76L43,67L64,76Z"
+						fill="rgb(150, 171, 179)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M102,84L115,63L97,61Z"
+						fill="rgb(77, 105, 114)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M70,98L60,102L53,98Z"
+						fill="rgb(127, 146, 162)"
+						fill-opacity="0.31"
+					/>
+					<path
+						d="M3,46L4,24L-31,42Z"
+						fill="rgb(7, 24, 31)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M208,85L207,78L215,78Z"
+						fill="rgb(190, 202, 205)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M238,2L251,11L243,2Z"
+						fill="rgb(36, 58, 69)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M85,79L109,79L77,81Z"
+						fill="rgb(125, 148, 144)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M14,12L16,-12L13,4Z"
+						fill="rgb(131, 150, 148)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M106,58L126,56L118,50Z"
+						fill="rgb(29, 61, 75)"
+						fill-opacity="0.21"
+					/>
+					<path
+						d="M117,31L124,51L135,-5Z"
+						fill="rgb(232, 236, 240)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M219,4L226,30L233,14Z"
+						fill="rgb(133, 157, 170)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M30,110L26,136L5,112Z"
+						fill="rgb(9, 28, 8)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M84,8L101,14L78,14Z"
+						fill="rgb(193, 206, 214)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M126,103L125,113L132,124Z"
+						fill="rgb(188, 203, 211)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M143,0L146,2L159,-1Z"
+						fill="rgb(109, 136, 150)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M210,14L197,-7L179,13Z"
+						fill="rgb(178, 195, 205)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M53,84L50,81L50,84Z"
+						fill="rgb(201, 216, 211)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M110,87L93,86L119,84Z"
+						fill="rgb(149, 168, 171)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M80,90L100,85L74,88Z"
+						fill="rgb(153, 174, 162)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M5,44L7,33L12,32Z"
+						fill="rgb(84, 112, 129)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M67,67L61,71L78,70Z"
+						fill="rgb(62, 89, 99)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M237,10L255,24L247,24Z"
+						fill="rgb(22, 43, 49)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M112,95L102,89L114,89Z"
+						fill="rgb(18, 40, 47)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M30,34L43,57L25,41Z"
+						fill="rgb(199, 211, 217)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M9,72L3,102L-40,86Z"
+						fill="rgb(10, 24, 29)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M97,80L46,89L84,86Z"
+						fill="rgb(30, 54, 55)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M252,96L244,93L254,89Z"
+						fill="rgb(112, 138, 134)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M231,33L244,32L224,27Z"
+						fill="rgb(150, 171, 182)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M54,-14L80,10L98,-11Z"
+						fill="rgb(122, 146, 160)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M118,63L128,59L99,59Z"
+						fill="rgb(159, 180, 185)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M240,30L235,11L239,15Z"
+						fill="rgb(157, 179, 191)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M203,13L227,6L220,-8Z"
+						fill="rgb(180, 197, 208)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M138,78L167,101L156,105Z"
+						fill="rgb(126, 150, 163)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M144,19L157,16L139,12Z"
+						fill="rgb(245, 248, 249)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M84,17L79,43L84,37Z"
+						fill="rgb(224, 230, 232)"
+						fill-opacity="0.62"
+					/>
+					<path
+						d="M44,73L37,80L44,83Z"
+						fill="rgb(65, 94, 93)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M2,114L19,103L-6,111Z"
+						fill="rgb(79, 112, 85)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M63,104L29,122L75,104Z"
+						fill="rgb(4, 8, 3)"
+						fill-opacity="0.56"
+					/>
+					<path
+						d="M88,56L74,65L79,55Z"
+						fill="rgb(135, 159, 169)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M73,104L78,121L103,98Z"
+						fill="rgb(61, 87, 97)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M38,77L33,59L47,77Z"
+						fill="rgb(117, 145, 154)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M66,78L67,84L56,80Z"
+						fill="rgb(128, 151, 143)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M73,48L64,37L73,32Z"
+						fill="rgb(181, 196, 205)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M21,58L9,47L21,81Z"
+						fill="rgb(46, 65, 75)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M1,51L12,44L18,26Z"
+						fill="rgb(18, 38, 49)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M3,30L7,4L11,13Z"
+						fill="rgb(65, 87, 92)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M131,44L152,35L136,51Z"
+						fill="rgb(108, 134, 146)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M19,32L20,19L38,32Z"
+						fill="rgb(121, 147, 157)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M36,80L28,88L34,86Z"
+						fill="rgb(185, 221, 235)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M211,104L209,94L210,120Z"
+						fill="rgb(194, 209, 211)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M115,25L109,39L119,42Z"
+						fill="rgb(160, 178, 186)"
+						fill-opacity="0.68"
+					/>
+					<path
+						d="M16,28L15,21L23,11Z"
+						fill="rgb(36, 61, 70)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M103,4L90,10L87,17Z"
+						fill="rgb(228, 236, 243)"
+						fill-opacity="0.29"
+					/>
+					<path
+						d="M150,25L154,11L164,19Z"
+						fill="rgb(177, 194, 203)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M89,91L84,84L98,92Z"
+						fill="rgb(28, 50, 52)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M247,27L253,29L237,15Z"
+						fill="rgb(108, 134, 146)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M54,31L60,39L42,37Z"
+						fill="rgb(190, 205, 212)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M210,107L235,126L243,107Z"
+						fill="rgb(35, 52, 55)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M110,16L96,27L103,10Z"
+						fill="rgb(150, 172, 182)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M45,56L64,49L60,38Z"
+						fill="rgb(231, 235, 237)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M117,110L115,102L119,87Z"
+						fill="rgb(167, 186, 196)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M229,37L215,41L230,23Z"
+						fill="rgb(163, 181, 187)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M16,74L27,89L19,90Z"
+						fill="rgb(117, 146, 164)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M212,64L174,52L207,73Z"
+						fill="rgb(170, 189, 197)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M220,16L182,33L221,33Z"
+						fill="rgb(208, 218, 225)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M130,40L122,65L140,30Z"
+						fill="rgb(158, 178, 188)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M20,74L30,80L22,80Z"
+						fill="rgb(34, 59, 72)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M37,108L38,105L24,108Z"
+						fill="rgb(27, 54, 40)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M136,90L146,106L129,107Z"
+						fill="rgb(99, 129, 139)"
+						fill-opacity="0.34"
+					/>
+					<path
+						d="M129,17L135,9L133,17Z"
+						fill="rgb(255, 255, 255)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M33,111L49,107L65,113Z"
+						fill="rgb(2, 15, 4)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M40,96L53,88L62,98Z"
+						fill="rgb(66, 95, 81)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M152,45L137,41L150,36Z"
+						fill="rgb(94, 122, 133)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M185,19L167,41L188,34Z"
+						fill="rgb(117, 144, 156)"
+						fill-opacity="0.26"
+					/>
+					<path
+						d="M118,86L118,91L115,86Z"
+						fill="rgb(18, 41, 50)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M27,39L22,43L19,35Z"
+						fill="rgb(178, 196, 204)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M27,99L9,79L19,86Z"
+						fill="rgb(79, 111, 123)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M165,41L188,34L223,51Z"
+						fill="rgb(185, 200, 208)"
+						fill-opacity="0.65"
+					/>
+					<path
+						d="M14,49L17,33L25,26Z"
+						fill="rgb(103, 129, 140)"
+						fill-opacity="0.45"
+					/>
+					<path
+						d="M221,27L208,14L225,16Z"
+						fill="rgb(176, 195, 204)"
+						fill-opacity="0.51"
+					/>
+					<path
+						d="M263,9L249,3L262,3Z"
+						fill="rgb(3, 19, 24)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M101,50L102,36L96,25Z"
+						fill="rgb(106, 131, 144)"
+						fill-opacity="0.68"
+					/>
+					<path
+						d="M142,63L121,74L130,61Z"
+						fill="rgb(126, 147, 160)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M97,96L116,94L75,157Z"
+						fill="rgb(75, 105, 116)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M147,61L143,66L161,69Z"
+						fill="rgb(246, 249, 250)"
+						fill-opacity="0.64"
+					/>
+					<path
+						d="M190,47L187,56L212,48Z"
+						fill="rgb(154, 174, 183)"
+						fill-opacity="0.41"
+					/>
+					<path
+						d="M254,9L265,3L252,15Z"
+						fill="rgb(61, 92, 107)"
+						fill-opacity="0.59"
+					/>
+					<path
+						d="M243,91L232,93L242,97Z"
+						fill="rgb(76, 109, 110)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M50,98L33,128L56,97Z"
+						fill="rgb(24, 42, 38)"
+						fill-opacity="0.60"
+					/>
+					<path
+						d="M78,25L63,22L84,6Z"
+						fill="rgb(161, 179, 190)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M109,14L121,-11L113,31Z"
+						fill="rgb(241, 245, 246)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M123,29L148,21L140,30Z"
+						fill="rgb(195, 209, 217)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M3,99L11,99L28,91Z"
+						fill="rgb(66, 96, 93)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M220,45L241,52L230,60Z"
+						fill="rgb(144, 165, 173)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M262,107L232,102L279,97Z"
+						fill="rgb(128, 149, 127)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M205,5L202,-8L221,6Z"
+						fill="rgb(154, 173, 184)"
+						fill-opacity="0.40"
+					/>
+					<path
+						d="M170,76L192,90L182,65Z"
+						fill="rgb(178, 197, 205)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M96,23L98,17L88,25Z"
+						fill="rgb(76, 105, 117)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M116,92L112,90L124,90Z"
+						fill="rgb(108, 136, 148)"
+						fill-opacity="0.55"
+					/>
+					<path
+						d="M160,10L147,20L153,19Z"
+						fill="rgb(233, 237, 240)"
+						fill-opacity="0.48"
+					/>
+					<path
+						d="M144,73L147,72L130,110Z"
+						fill="rgb(117, 142, 156)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M20,42L25,44L25,69Z"
+						fill="rgb(101, 124, 136)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M111,18L106,36L106,2Z"
+						fill="rgb(187, 202, 209)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M246,16L251,-13L240,13Z"
+						fill="rgb(67, 94, 104)"
+						fill-opacity="0.38"
+					/>
+					<path
+						d="M94,16L97,6L85,31Z"
+						fill="rgb(127, 151, 165)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M252,105L231,106L281,110Z"
+						fill="rgb(56, 80, 67)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M96,78L99,75L65,78Z"
+						fill="rgb(32, 55, 65)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M119,15L129,16L121,-3Z"
+						fill="rgb(192, 206, 215)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M3,33L11,36L14,18Z"
+						fill="rgb(78, 105, 118)"
+						fill-opacity="0.57"
+					/>
+					<path
+						d="M250,93L252,91L271,93Z"
+						fill="rgb(43, 68, 74)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M71,36L55,32L54,39Z"
+						fill="rgb(168, 186, 195)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M73,99L75,102L80,101Z"
+						fill="rgb(0, 13, 18)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M251,29L254,33L240,34Z"
+						fill="rgb(65, 88, 97)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M239,35L222,36L239,31Z"
+						fill="rgb(153, 173, 182)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M127,88L137,87L128,76Z"
+						fill="rgb(123, 148, 160)"
+						fill-opacity="0.37"
+					/>
+					<path
+						d="M220,61L212,88L209,55Z"
+						fill="rgb(138, 160, 168)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M116,58L114,80L119,62Z"
+						fill="rgb(175, 193, 203)"
+						fill-opacity="0.39"
+					/>
+					<path
+						d="M125,78L124,108L117,79Z"
+						fill="rgb(86, 114, 123)"
+						fill-opacity="0.44"
+					/>
+					<path
+						d="M116,105L96,113L111,114Z"
+						fill="rgb(101, 128, 139)"
+						fill-opacity="0.53"
+					/>
+					<path
+						d="M181,107L165,108L166,127Z"
+						fill="rgb(176, 194, 204)"
+						fill-opacity="0.47"
+					/>
+					<path
+						d="M113,124L120,111L117,98Z"
+						fill="rgb(168, 187, 197)"
+						fill-opacity="0.46"
+					/>
+					<path
+						d="M221,102L279,102L223,101Z"
+						fill="rgb(139, 159, 144)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M170,15L202,12L173,24Z"
+						fill="rgb(160, 179, 192)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M239,105L255,100L240,100Z"
+						fill="rgb(119, 143, 129)"
+						fill-opacity="0.49"
+					/>
+					<path
+						d="M246,88L265,73L240,64Z"
+						fill="rgb(82, 111, 125)"
+						fill-opacity="0.43"
+					/>
+					<path
+						d="M231,93L226,100L217,99Z"
+						fill="rgb(90, 122, 119)"
+						fill-opacity="0.52"
+					/>
+					<path
+						d="M115,38L108,18L108,32Z"
+						fill="rgb(183, 198, 205)"
+						fill-opacity="0.54"
+					/>
+					<path
+						d="M14,95L5,85L6,99Z"
+						fill="rgb(35, 62, 66)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M57,53L49,53L55,59Z"
+						fill="rgb(145, 166, 176)"
+						fill-opacity="0.42"
+					/>
+					<path
+						d="M12,63L15,88L19,68Z"
+						fill="rgb(54, 75, 84)"
+						fill-opacity="0.61"
+					/>
+					<path
+						d="M94,29L82,52L90,16Z"
+						fill="rgb(97, 124, 136)"
+						fill-opacity="0.50"
+					/>
+					<path
+						d="M72,76L88,78L76,78Z"
+						fill="rgb(0, 1, 1)"
+						fill-opacity="0.27"
+					/>
+				</svg>
+			)
 		default:
 			return null
 	}
