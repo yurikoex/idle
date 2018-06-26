@@ -4,10 +4,12 @@ import formatter from '../ResourceFormatter'
 
 export default ({ amount, resourceType, multiplier }) => (
 	<div className="ticker">
-		<span>
-			{formatter(amount)} {resourceType}({formatter(multiplier * 60 * 60)}{' '}
-			{resourceType} per minute)
+		<div className="total">{formatter(amount)}</div>
+		<span className="resourceInfo">
+			<span className="resourceName">{resourceType}</span>
+			<span className="resourceTotals">
+				{formatter(multiplier * 60 * 60)} {resourceType} per minute
+			</span>
 		</span>
-		<Icon />
 	</div>
 )
