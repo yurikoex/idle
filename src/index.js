@@ -83,6 +83,7 @@ class App extends React.PureComponent {
 					state.amount + 1 * (state.multiplier + this.adjustments(state))
 				const adjustedNewAmount =
 					msSinceLastTick > 32 ? msSinceLastTick / 16.33 * newAmount : newAmount
+
 				const newState = {
 					...state,
 					lastTick: new Date().getTime(),

@@ -107,14 +107,20 @@ export const defaultState = (level = 0) => ({
 			cost: 10,
 			multiplier: 0.01,
 			desc:
-				'Death tried to take these soldiers yet their survival instincts avail.'
+				'Death tried to take these soldiers yet their survival instincts avail.',
+			preferredLocation: 'Military Base',
+			bonusDesc:
+				'Walking the grounds of the base remind them of their former glory.'
 		},
 		{
 			...typeBase,
 			name: 'Mutatoe',
 			cost: 100,
 			multiplier: 0.1,
-			desc: 'Ravaged by the radiated potatoes, these mutant toes know pain.'
+			desc: 'Ravaged by the radiated potatoes, these mutant toes know pain.',
+			preferredLocation: 'Abandoned Building',
+			bonusDesc:
+				'The others lock the mutants in the basement only fueling their rage!'
 		},
 		{
 			...typeBase,
@@ -128,7 +134,7 @@ export const defaultState = (level = 0) => ({
 			name: 'Heroe',
 			cost: 10000,
 			multiplier: 10,
-			desc: ''
+			desc: 'True leaders of the new world.'
 		}
 	]
 })
