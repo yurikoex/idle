@@ -96,7 +96,7 @@ export const defaultState = (level = 0) => ({
 			...typeBase,
 			name: 'Wastelander',
 			desc:
-				'Lost to world, wandering the wastelands searching for what little essense of humanity still exists.',
+				'Lost to the world, wandering the wastelands searching for what little essence of humanity still exists.',
 			preferredLocation: 'Wastelands',
 			bonusDesc:
 				'Wastelanders prefer their meaningless lifestyles within the Wastelands'
@@ -105,25 +105,30 @@ export const defaultState = (level = 0) => ({
 			...typeBase,
 			name: 'Wounded Warrior',
 			cost: 10,
-			multiplier: 0.01
+			multiplier: 0.01,
+			desc:
+				'Death tried to take these soldiers yet their survival instincts avail.'
 		},
 		{
 			...typeBase,
 			name: 'Mutatoe',
 			cost: 100,
-			multiplier: 0.1
+			multiplier: 0.1,
+			desc: 'Ravaged by the radiated potatoes, these mutant toes know pain.'
 		},
 		{
 			...typeBase,
 			name: 'Elite',
 			cost: 1000,
-			multiplier: 1
+			multiplier: 1,
+			desc: 'The apocalypse is a breeze for these highly skilled survivalists.'
 		},
 		{
 			...typeBase,
 			name: 'Heroe',
 			cost: 10000,
-			multiplier: 10
+			multiplier: 10,
+			desc: ''
 		}
 	]
 })

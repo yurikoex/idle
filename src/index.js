@@ -80,7 +80,7 @@ class App extends React.PureComponent {
 				const now = new Date().getTime()
 				const msSinceLastTick = (now - state.lastTick) / 1000
 				const newAmount =
-					state.amount + 1 * (state.multiplier + this.adjustments(state))
+					state.amount + 100 * (state.multiplier + this.adjustments(state))
 				const adjustedNewAmount =
 					msSinceLastTick > 32 ? msSinceLastTick / 16.33 * newAmount : newAmount
 				const newState = {
@@ -142,13 +142,15 @@ class App extends React.PureComponent {
 		return (
 			<div className="App">
 				<Background resetName={this.state.resetName} />
-				<div className="reset">{this.state.actionVerb}</div>
-				<Ticker
-					amount={this.state.amount}
-					resourceType={this.state.resourceType}
-					actionVerb={this.state.actionVerb}
-					multiplier={this.state.multiplier}
-				/>
+				<div className="header">
+					<div className="reset">{this.state.actionVerb}</div>
+					<Ticker
+						amount={this.state.amount}
+						resourceType={this.state.resourceType}
+						actionVerb={this.state.actionVerb}
+						multiplier={this.state.multiplier}
+					/>
+				</div>
 				<div className="type-container">
 					{this.state.types
 						.filter(t => t.cost < this.state.maxAmount)
@@ -168,6 +170,7 @@ class App extends React.PureComponent {
 				</div>
 				{this.state.resetCost < this.state.maxAmount ? (
 					<Button
+						variant="outlined"
 						className="resetWorld"
 						disabled={this.canReset()}
 						onClick={() => this.reset(this.state.resetLevel + 1)}
@@ -177,16 +180,20 @@ class App extends React.PureComponent {
 						</strong>)
 					</Button>
 				) : null}
-				{this.state.isDebug ? (
-					<div className="debug">
-						<button style={{ width: 50 }} onClick={() => this.reset()}>
-							reset
-						</button>
 
-						<span>r:{this.state.multiplier}</span>
-						<span>t:{this.state.amount}</span>
-					</div>
-				) : null}
+				<div className="debug">
+					<Button
+						style={{ height: 1 }}
+						size="small"
+						variant="text"
+						onClick={() => this.reset()}
+					>
+						<span className="resetText">reset</span>
+					</Button>
+
+					<span>r:{this.state.multiplier}</span>
+					<span>t:{this.state.amount}</span>
+				</div>
 			</div>
 		)
 	}
