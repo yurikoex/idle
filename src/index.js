@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Button } from '@material-ui/core'
+
+import registerServiceWorker from './registerServiceWorker'
 import { version as config, defaultState, getReset } from './Config'
 import './styles.css'
 import Ticker from './Ticker'
 import Upgrade from './Upgrade'
 import Background from './Backgrounds'
+import AddToHomescreen from './AddToHomescreen'
 
 const updateState = ({ cost, updatedTypes, state }) => ({
 	...state,
@@ -38,10 +41,23 @@ class App extends React.PureComponent {
 				}
 			else this.state = defaultState(savedState.resetLevel)
 		} else this.state = defaultState()
-		console.log(this.state)
+
+		//Add to homescreen
+
+		this.deferredPrompt = null
 	}
 	componentDidMount() {
 		this.startLoop()
+		;/Android/i.test(navigator.userAgent) &&
+		!window.matchMedia('(display-mode: standalone)').matches
+			? window.addEventListener('beforeinstallprompt', e => {
+					// Prevent Chrome 67 and earlier from automatically showing the prompt
+					e.preventDefault()
+					// Stash the event so it can be triggered later.
+					this.deferredPrompt = e
+					this.setState(state => ({ ...state, showInstall: true }))
+				})
+			: void 0
 	}
 
 	componentWillUnmount() {
@@ -52,6 +68,14 @@ class App extends React.PureComponent {
 		if (!this._frameId) {
 			this._frameId = window.requestAnimationFrame(this.loop(this))
 		}
+	}
+
+	hideInstall() {
+		this.setState(state => ({ ...state, showInstall: false }))
+	}
+
+	install() {
+		this.deferredPrompt.prompt()
 	}
 
 	adjustments(state) {
@@ -156,6 +180,12 @@ class App extends React.PureComponent {
 		return (
 			<div className="App">
 				<Background resetName={this.state.resetName} />
+				{this.state.showInstall ? (
+					<AddToHomescreen
+						install={() => this.install()}
+						hideInstall={() => this.hideInstall()}
+					/>
+				) : null}
 				<div className="header">
 					<div className="reset">{this.state.actionVerb}</div>
 					<Ticker
@@ -216,3 +246,5 @@ class App extends React.PureComponent {
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
+
+registerServiceWorker()

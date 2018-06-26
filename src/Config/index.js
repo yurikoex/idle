@@ -84,6 +84,7 @@ export const version = { version: 2 }
 export const defaultState = (level = 0, amount = 10) => ({
 	...getReset(level),
 	...version,
+	showInstall: true,
 	lastTick: new Date().getTime(),
 	levelCostMultiplier: 1000,
 	increaseCostMultiplier: 1.5,
