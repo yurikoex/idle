@@ -47,14 +47,14 @@ class App extends React.PureComponent {
 		this.deferredPrompt = null
 	}
 	componentDidMount() {
+		let that = this
 		this.startLoop()
 		;/Android/i.test(navigator.userAgent) &&
 		!window.matchMedia('(display-mode: standalone)').matches
 			? window.addEventListener('beforeinstallprompt', e => {
-					// Prevent Chrome 67 and earlier from automatically showing the prompt
+					console.log(e)
 					e.preventDefault()
-					// Stash the event so it can be triggered later.
-					this.deferredPrompt = e
+					that.deferredPrompt = e
 					this.setState(state => ({ ...state, showInstall: true }))
 				})
 			: void 0
