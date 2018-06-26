@@ -42,23 +42,15 @@ class App extends React.PureComponent {
 			else this.state = defaultState(savedState.resetLevel)
 		} else this.state = defaultState()
 
-		//Add to homescreen
-
 		this.deferredPrompt = null
 	}
 	componentDidMount() {
-		let that = this
 		this.startLoop()
-		// ;/Android/i.test(navigator.userAgent) &&
-		// !window.matchMedia('(display-mode: standalone)').matches
-		// 	?
 		window.addEventListener('beforeinstallprompt', e => {
-			console.log(e)
 			e.preventDefault()
-			that.deferredPrompt = e
+			this.deferredPrompt = e
 			this.setState(state => ({ ...state, showInstall: true }))
 		})
-		// : void 0
 	}
 
 	componentWillUnmount() {
