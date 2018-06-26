@@ -88,7 +88,7 @@ export const defaultState = (level = 0, amount = 10) => ({
 	levelCostMultiplier: 1000,
 	increaseCostMultiplier: 1.5,
 	isDebug: true, //window.location.hostname.indexOf('codesandbox') !== -1,
-	amount,
+	amount: amount > 10 ? amount : 10,
 	maxAmount: 0,
 	multiplier: 0,
 	types: [
