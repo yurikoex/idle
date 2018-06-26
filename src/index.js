@@ -49,15 +49,16 @@ class App extends React.PureComponent {
 	componentDidMount() {
 		let that = this
 		this.startLoop()
-		;/Android/i.test(navigator.userAgent) &&
-		!window.matchMedia('(display-mode: standalone)').matches
-			? window.addEventListener('beforeinstallprompt', e => {
-					console.log(e)
-					e.preventDefault()
-					that.deferredPrompt = e
-					this.setState(state => ({ ...state, showInstall: true }))
-				})
-			: void 0
+		// ;/Android/i.test(navigator.userAgent) &&
+		// !window.matchMedia('(display-mode: standalone)').matches
+		// 	?
+		window.addEventListener('beforeinstallprompt', e => {
+			console.log(e)
+			e.preventDefault()
+			that.deferredPrompt = e
+			this.setState(state => ({ ...state, showInstall: true }))
+		})
+		// : void 0
 	}
 
 	componentWillUnmount() {
