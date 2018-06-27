@@ -132,6 +132,8 @@ class App extends React.PureComponent {
 			)
 			return updateState({ cost, updatedTypes, state })
 		})
+		window.ga('send', 'event', 'increase', type.name, type.count)
+		window.ga('set', 'increase', type.count.toString())
 	}
 
 	max(type) {
