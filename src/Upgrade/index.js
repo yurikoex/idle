@@ -57,7 +57,7 @@ export default ({
 								<Icon>attach_money</Icon>
 							</Avatar>
 						}
-						label={Math.floor(increaseCost)}
+						label={formatter(increaseCost)}
 					/>
 				</div>
 				<div className="chipContainer">
@@ -67,7 +67,7 @@ export default ({
 								<Icon>supervisor_account</Icon>
 							</Avatar>
 						}
-						label={type.count}
+						label={formatter(type.count)}
 					/>
 				</div>
 				<div className="chipContainer">
@@ -77,7 +77,7 @@ export default ({
 								<Icon>plus_one</Icon>
 							</Avatar>
 						}
-						label={type.level}
+						label={formatter(type.level)}
 					/>
 				</div>
 				<div className="chipContainer">
@@ -87,7 +87,7 @@ export default ({
 								<Icon>arrow_upward</Icon>
 							</Avatar>
 						}
-						label={Math.floor(levelCost)}
+						label={formatter(levelCost)}
 					/>
 				</div>
 			</div>
