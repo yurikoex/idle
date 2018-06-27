@@ -9,6 +9,7 @@ import Ticker from './Ticker'
 import Upgrade from './Upgrade'
 import Background from './Backgrounds'
 import AddToHomescreen from './AddToHomescreen'
+import Research from './Research'
 
 const updateState = ({ cost, updatedTypes, state }) => ({
 	...state,
@@ -51,10 +52,13 @@ class App extends React.PureComponent {
 			this.deferredPrompt = e
 			this.setState(state => ({ ...state, showInstall: true }))
 		})
+		this.updateWindowDimensions(this)()
+		window.addEventListener('resize', this.updateWindowDimensions(this))
 	}
 
 	componentWillUnmount() {
 		this.stopLoop()
+		window.removeEventListener('resize', this.updateWindowDimensions(this))
 	}
 
 	startLoop() {
@@ -168,6 +172,21 @@ class App extends React.PureComponent {
 			defaultState(level, level !== 0 ? this.state.amount / 1000 : void 0)
 		)
 	}
+
+	updateWindowDimensions(scope) {
+		return () =>
+			scope.setState(state => ({
+				...state,
+				width: window.innerWidth,
+				height: window.innerHeight
+			}))
+	}
+
+	shouldShow(tab) {
+		return this.state.width >= 600
+			? 'show'
+			: this.state.currentTab === tab ? 'show' : 'hidden'
+	}
 	// https://ondras.github.io/primitive.js/
 	render() {
 		return (
@@ -188,23 +207,26 @@ class App extends React.PureComponent {
 						multiplier={this.state.multiplier}
 					/>
 				</div>
-				<div className="type-container">
-					{this.state.types
-						.filter(t => t.cost < this.state.maxAmount)
-						.map(type => (
-							<Upgrade
-								type={type}
-								canBuy={type => this.canBuy(type)}
-								canLevel={type => this.canLevel(type)}
-								level={type => this.level(type)}
-								increase={type => this.increase(type)}
-								resourceType={this.state.resourceType}
-								increaseCost={increaseCost({ state: this.state, type })}
-								levelCost={levelCost({ state: this.state, type })}
-								max={type => this.max(type)}
-								state={this.state}
-							/>
-						))}
+				<div className="tab-container">
+					<div className={`upgrades-container ${this.shouldShow(0)}`}>
+						{this.state.types
+							.filter(t => t.cost < this.state.maxAmount)
+							.map(type => (
+								<Upgrade
+									type={type}
+									canBuy={type => this.canBuy(type)}
+									canLevel={type => this.canLevel(type)}
+									level={type => this.level(type)}
+									increase={type => this.increase(type)}
+									resourceType={this.state.resourceType}
+									increaseCost={increaseCost({ state: this.state, type })}
+									levelCost={levelCost({ state: this.state, type })}
+									max={type => this.max(type)}
+									state={this.state}
+								/>
+							))}
+					</div>
+					<Research shouldShow={this.shouldShow(1)} />
 				</div>
 				{this.state.resetCost < this.state.maxAmount ? (
 					<Button
