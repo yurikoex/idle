@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom'
 import { Button } from '@material-ui/core'
 
 import registerServiceWorker from './registerServiceWorker'
-import { version as config, defaultState, getReset } from './Config'
+import {
+	version as config,
+	defaultState,
+	getReset,
+	levelCost,
+	increaseCost
+} from './Config'
 import './styles.css'
 import Ticker from './Ticker'
 import Upgrade from './Upgrade'
@@ -20,12 +26,6 @@ const updateState = ({ cost, updatedTypes, state }) => ({
 	amount: state.amount - cost,
 	types: updatedTypes
 })
-
-const increaseCost = ({ state, type }) =>
-	type.level * type.cost * type.count * state.increaseCostMultiplier + type.cost
-
-const levelCost = ({ state, type }) =>
-	type.cost * type.level * state.levelCostMultiplier
 
 class App extends React.PureComponent {
 	constructor(props) {
@@ -99,11 +99,18 @@ class App extends React.PureComponent {
 		return () => {
 			scope.setState(state => {
 				const now = new Date().getTime()
-				const msSinceLastTick = (now - state.lastTick) / 1000
+				// console.log(now - state.lastTick)
+				const msSinceLastTick = now - state.lastTick
 				const newAmount =
 					state.amount + 1 * (state.multiplier + this.adjustments(state))
+
+				// const x = Math.ceil(msSinceLastTick / 16.33)
 				const adjustedNewAmount =
-					msSinceLastTick > 32 ? msSinceLastTick / 16.33 * newAmount : newAmount
+					msSinceLastTick > 32
+						? newAmount +
+							Math.ceil(msSinceLastTick / 16.33) *
+								(1 * (state.multiplier + this.adjustments(state)))
+						: newAmount
 
 				const newState = {
 					...state,
@@ -189,6 +196,14 @@ class App extends React.PureComponent {
 			? 'show'
 			: this.state.currentTab === tab ? 'show' : 'hidden'
 	}
+
+	toggle() {
+		this.setState(state => ({
+			...state,
+			currentTab: state.currentTab === 0 ? 1 : 0
+		}))
+	}
+
 	// https://ondras.github.io/primitive.js/
 	render() {
 		return (
@@ -210,25 +225,24 @@ class App extends React.PureComponent {
 					/>
 				</div>
 				<div className="tab-container">
-					<div className={`upgrades-container ${this.shouldShow(0)}`}>
-						{this.state.types
-							.filter(t => t.cost < this.state.maxAmount)
-							.map(type => (
-								<Upgrade
-									type={type}
-									canBuy={type => this.canBuy(type)}
-									canLevel={type => this.canLevel(type)}
-									level={type => this.level(type)}
-									increase={type => this.increase(type)}
-									resourceType={this.state.resourceType}
-									increaseCost={increaseCost({ state: this.state, type })}
-									levelCost={levelCost({ state: this.state, type })}
-									max={type => this.max(type)}
-									state={this.state}
-								/>
-							))}
+					<div className={`container-wrapper ${this.shouldShow(0)}`}>
+						<Upgrade
+							canBuy={type => this.canBuy(type)}
+							canLevel={type => this.canLevel(type)}
+							level={type => this.level(type)}
+							increase={type => this.increase(type)}
+							max={type => this.max(type)}
+							state={this.state}
+							toggle={() => this.toggle()}
+						/>
 					</div>
-					<Research shouldShow={this.shouldShow(1)} />
+
+					<div className={`container-wrapper ${this.shouldShow(1)}`}>
+						<Research
+							toggle={() => this.toggle()}
+							availableResearch={this.state.research}
+						/>
+					</div>
 				</div>
 				{this.state.resetCost < this.state.maxAmount ? (
 					<Button
@@ -251,8 +265,15 @@ class App extends React.PureComponent {
 						onClick={() => this.reset()}
 					>
 						<span className="resetText">reset</span>
+					</Button>{' '}
+					<Button
+						style={{ height: 1 }}
+						size="small"
+						variant="text"
+						onClick={() => this.toggle()}
+					>
+						<span className="resetText">toggle</span>
 					</Button>
-
 					<span>r:{this.state.multiplier}</span>
 					<span>t:{this.state.amount}</span>
 				</div>
