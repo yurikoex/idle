@@ -8,6 +8,12 @@ export const typeBase = {
 	desc: ''
 }
 
+export const increaseCost = ({ state, type }) =>
+	type.level * type.cost * type.count * state.increaseCostMultiplier + type.cost
+
+export const levelCost = ({ state, type }) =>
+	type.cost * type.level * state.levelCostMultiplier
+
 export const resetValue = [
 	{
 		resetLevel: 0,
@@ -81,6 +87,63 @@ export const getReset = (level = 0) => {
 
 export const version = { version: 2 }
 
+export const research = [
+	{
+		name: 'Veterans Association',
+		time: 1000 * 60 * 5,
+		cost: 10,
+		desc:
+			"Wounded Warriors need some type of hope for the future. Let's tell him what they want to hear."
+	}
+]
+
+export const types = [
+	{
+		...typeBase,
+		name: 'Wastelander',
+		desc:
+			'Lost to the world, wandering the wastelands searching for what little essence of humanity still exists.',
+		preferredLocation: 'Wastelands',
+		bonusDesc:
+			'Wastelanders prefer their meaningless lifestyles within the Wastelands'
+	},
+	{
+		...typeBase,
+		name: 'Wounded Warrior',
+		cost: 10,
+		multiplier: 0.01,
+		desc:
+			'Death tried to take these soldiers yet their survival instincts avail.',
+		preferredLocation: 'Military Base',
+		bonusDesc:
+			'Walking the grounds of the base remind them of their former glory.'
+	},
+	{
+		...typeBase,
+		name: 'Mutatoe',
+		cost: 100,
+		multiplier: 0.1,
+		desc: 'Ravaged by the radiated potatoes, these mutant toes know pain.',
+		preferredLocation: 'Abandoned Building',
+		bonusDesc:
+			'The others lock the mutants in the basement only fueling their rage!'
+	},
+	{
+		...typeBase,
+		name: 'Elite',
+		cost: 1000,
+		multiplier: 1,
+		desc: 'The apocalypse is a breeze for these highly skilled survivalists.'
+	},
+	{
+		...typeBase,
+		name: 'Heroe',
+		cost: 10000,
+		multiplier: 10,
+		desc: 'True leaders of the new world.'
+	}
+]
+
 export const defaultState = (level = 0, amount = 10) => ({
 	...getReset(level),
 	...version,
@@ -93,50 +156,6 @@ export const defaultState = (level = 0, amount = 10) => ({
 	amount: amount > 10 ? amount : 10,
 	maxAmount: 0,
 	multiplier: 0,
-	types: [
-		{
-			...typeBase,
-			name: 'Wastelander',
-			desc:
-				'Lost to the world, wandering the wastelands searching for what little essence of humanity still exists.',
-			preferredLocation: 'Wastelands',
-			bonusDesc:
-				'Wastelanders prefer their meaningless lifestyles within the Wastelands'
-		},
-		{
-			...typeBase,
-			name: 'Wounded Warrior',
-			cost: 10,
-			multiplier: 0.01,
-			desc:
-				'Death tried to take these soldiers yet their survival instincts avail.',
-			preferredLocation: 'Military Base',
-			bonusDesc:
-				'Walking the grounds of the base remind them of their former glory.'
-		},
-		{
-			...typeBase,
-			name: 'Mutatoe',
-			cost: 100,
-			multiplier: 0.1,
-			desc: 'Ravaged by the radiated potatoes, these mutant toes know pain.',
-			preferredLocation: 'Abandoned Building',
-			bonusDesc:
-				'The others lock the mutants in the basement only fueling their rage!'
-		},
-		{
-			...typeBase,
-			name: 'Elite',
-			cost: 1000,
-			multiplier: 1,
-			desc: 'The apocalypse is a breeze for these highly skilled survivalists.'
-		},
-		{
-			...typeBase,
-			name: 'Heroe',
-			cost: 10000,
-			multiplier: 10,
-			desc: 'True leaders of the new world.'
-		}
-	]
+	types,
+	research
 })
