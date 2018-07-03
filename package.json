@@ -7,27 +7,17 @@
 	"dependencies": {
 		"@material-ui/core": "1.2.3",
 		"material-ui": "0.20.1",
-		"moment": "2.22.2",
-		"node-sass-chokidar": "1.3.0",
 		"npm-run-all": "4.1.3",
 		"react": "16.3.2",
 		"react-dom": "16.3.2",
 		"react-scripts": "1.1.4",
-		"react-swipeable": "4.3.0",
-		"sass": "1.7.0",
-		"swipe": "1.7.7"
+		"react-swipeable": "4.3.0"
 	},
 	"devDependencies": {},
 	"homepage": "./",
 	"scripts": {
-		"build-css": "node-sass-chokidar src/ -o src/",
-		"watch-css":
-			"npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-		"start-js": "react-scripts start",
-		"start": "npm-run-all -p watch-css start-js",
-		"build-js": "react-scripts build",
-		"build": "npm-run-all build-css build-js && mv build docs",
-		"test": "react-scripts test --env=jsdom",
+		"start": "react-scripts start",
+		"build": "react-scripts build",
 		"eject": "react-scripts eject"
 	}
 }
