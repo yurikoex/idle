@@ -95,7 +95,7 @@ export const researchBase = {
 	valueBuffer: 100,
 	value: 0
 }
-export const research = [
+export const baseResearch = [
 	{
 		...researchBase,
 		name: 'Basic Survival',
@@ -172,7 +172,11 @@ export const types = [
 	}
 ]
 
-export const defaultState = (level = 0, amount = 10) => ({
+export const defaultState = (
+	level = 0,
+	amount = 10,
+	research = baseResearch
+) => ({
 	...getReset(level),
 	...version,
 	currentTab: 0,

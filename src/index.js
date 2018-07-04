@@ -248,7 +248,11 @@ class GameManager extends React.PureComponent {
 	reset(level = 0) {
 		console.log(level)
 		this.setState(
-			defaultState(level, level !== 0 ? this.state.amount / 1000 : void 0)
+			defaultState(
+				level,
+				level !== 0 ? this.state.amount / 1000 : void 0,
+				this.state.research
+			)
 		)
 	}
 
