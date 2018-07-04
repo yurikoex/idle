@@ -12,7 +12,10 @@ export default ({
 	startResearch,
 	availableResearch = []
 }) => (
-	<Swipeable onSwipedLeft={() => toggle()}>
+	<Swipeable
+		innerRef={el => (el ? (el.width = '100%') : void 0)}
+		onSwipedLeft={() => toggle()}
+	>
 		<div className="research-container">
 			{availableResearch.map(research => (
 				<div className="research">
