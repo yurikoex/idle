@@ -30,6 +30,7 @@ const updateState = ({ cost, updatedTypes, state }) => ({
 class GameManager extends React.PureComponent {
 	constructor(props) {
 		super(props)
+		// console.log([].every(t => t))
 		const ls = window.localStorage.getItem('state')
 		if (ls) {
 			const savedState = JSON.parse(ls)
@@ -179,7 +180,7 @@ class GameManager extends React.PureComponent {
 	max(type) {
 		const clear = setInterval(() => {
 			const currentType = this.state.types.find(t => t.name === type.name)
-			!this.canBuy(currentType)
+			this.canBuy(currentType)
 				? this.increase(currentType)
 				: clearInterval(clear)
 		}, 100)
@@ -196,22 +197,34 @@ class GameManager extends React.PureComponent {
 	}
 
 	canBuy(type) {
-		// console.log(this.state.amount)
-		return this.state.amount - increaseCost({ state: this.state, type }) <= 0
+		const canBuyWithMoney =
+			this.state.amount - increaseCost({ state: this.state, type }) > 0
+
+		if (type.preq && type.preq.length > 0) {
+			return this.meetPreq(type.preq) && canBuyWithMoney
+		} else return canBuyWithMoney
 	}
 
 	canLevel(type) {
-		return this.state.amount - levelCost({ state: this.state, type }) <= 0
+		return this.state.amount - levelCost({ state: this.state, type }) > 0
 	}
 
 	canReset() {
-		return this.state.amount - this.state.resetCost <= 0
+		return this.state.amount - this.state.resetCost > 0
 	}
 
-	canResearch(research) {
-		const r = this.state.research.find(i => i.name === research.name)
-		// console.log(r.started)
-		return r.started || this.state.amount - r.cost < 0
+	meetPreq(preq = []) {
+		const x = [
+			...this.state.types.filter(t => t.count > 0).map(t => t.name),
+			...this.state.research.filter(r => r.completed).map(r => r.name)
+		]
+		return preq.every(p => x.some(i => i === p))
+	}
+
+	canResearch(r) {
+		return (
+			!r.started && (this.meetPreq(r.preq) && this.state.amount - r.cost > 0)
+		)
 	}
 
 	startResearch(research) {
@@ -299,7 +312,9 @@ class GameManager extends React.PureComponent {
 							toggle={() => this.toggle()}
 							canResearch={research => this.canResearch(research)}
 							startResearch={research => this.startResearch(research)}
-							availableResearch={this.state.research}
+							availableResearch={this.state.research.filter(
+								r => r.cost < this.state.maxAmount
+							)}
 						/>
 					</div>
 				</div>

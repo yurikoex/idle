@@ -108,8 +108,18 @@ export const research = [
 		name: 'Veterans Association',
 		time: 1000 * 60 * 5,
 		cost: 100,
+		preq: ['Basic Survival'],
 		desc:
 			"Wounded Warriors need some type of hope for the future. Let's tell him what they want to hear."
+	},
+	{
+		...researchBase,
+		name: 'Putrige Bait',
+		time: 1000 * 60 * 60,
+		cost: 1000,
+		preq: ['Wounded Warrior'],
+		desc:
+			'Send the warriors to the wastelands to lure in the freaks with thier combat traps.'
 	}
 ]
 
@@ -128,6 +138,7 @@ export const types = [
 		name: 'Wounded Warrior',
 		cost: 10,
 		multiplier: 0.01,
+		preq: ['Veterans Association', 'Wastelander'],
 		desc:
 			'Death tried to take these soldiers yet their survival instincts avail.',
 		preferredLocation: 'Military Base',
@@ -139,6 +150,7 @@ export const types = [
 		name: 'Mutatoe',
 		cost: 100,
 		multiplier: 0.1,
+		preq: ['Wounded Warrior', 'Putrige Bait'],
 		desc: 'Ravaged by the radiated potatoes, these mutant toes know pain.',
 		preferredLocation: 'Abandoned Building',
 		bonusDesc:

@@ -17,7 +17,7 @@ export default ({ canBuy, canLevel, level, increase, max, state, toggle }) => (
 								size="small"
 								variant="flat"
 								color="primary"
-								disabled={canBuy(type)}
+								disabled={!canBuy(type)}
 								onClick={() => increase(type)}
 							>
 								add
@@ -26,7 +26,7 @@ export default ({ canBuy, canLevel, level, increase, max, state, toggle }) => (
 								size="small"
 								variant="flat"
 								color="primary"
-								disabled={canBuy(type)}
+								disabled={!canBuy(type)}
 								onClick={() => max(type)}
 							>
 								max
@@ -35,7 +35,7 @@ export default ({ canBuy, canLevel, level, increase, max, state, toggle }) => (
 								size="small"
 								variant="flat"
 								color="secondary"
-								disabled={canLevel(type)}
+								disabled={!canLevel(type)}
 								onClick={() => level(type)}
 							>
 								level up

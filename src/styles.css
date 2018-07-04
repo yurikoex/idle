@@ -123,6 +123,8 @@ body {
 }
 
 .type-name {
+	display: flex;
+	align-items: center;
 	font-weight: 500;
 	color: #451120;
 	padding-top: 5px;

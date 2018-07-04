@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button } from '@material-ui/core'
+import { Button, Icon } from '@material-ui/core'
 
 import LinearProgress from '@material-ui/core/LinearProgress'
 
@@ -18,16 +18,19 @@ export default ({
 				<div className="research">
 					<div className="upgradeRow">
 						<span className="type-name">Research: {research.name}</span>
-
-						<Button
-							size="small"
-							variant="flat"
-							color="primary"
-							disabled={canResearch(research)}
-							onClick={() => startResearch(research)}
-						>
-							Research
-						</Button>
+						{research.completed ? (
+							<Icon>thumb_up</Icon>
+						) : (
+							<Button
+								size="small"
+								variant="flat"
+								color="primary"
+								disabled={!canResearch(research)}
+								onClick={() => startResearch(research)}
+							>
+								Research
+							</Button>
+						)}
 					</div>
 					<div className="upgradeRow">
 						<span className="desc">{research.desc}</span>
