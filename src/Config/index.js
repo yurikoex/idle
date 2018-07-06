@@ -28,7 +28,7 @@ export const resetValue = [
 		resetCost: 1000,
 		resetName: 'Tent City',
 		resourceType: 'Scraps',
-		preq: ['Basic Survival'],
+		resetPreq: ['Basic Survival'],
 		actionVerb: 'Gathering in the Tent City'
 	},
 	{

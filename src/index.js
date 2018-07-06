@@ -210,7 +210,11 @@ class GameManager extends React.PureComponent {
 	}
 
 	canReset() {
-		return this.state.amount - this.state.resetCost > 0
+		const canBuyWithMoney = this.state.amount - this.state.resetCost > 0
+
+		if (this.resetPreq && this.resetPreq.length > 0) {
+			return this.meetPreq(this.resetPreq) && canBuyWithMoney
+		} else return canBuyWithMoney
 	}
 
 	meetPreq(preq = []) {
