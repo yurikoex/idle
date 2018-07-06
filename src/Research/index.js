@@ -13,7 +13,7 @@ export default ({
 	availableResearch = []
 }) => (
 	<Swipeable
-		innerRef={el => (el ? (el.width = '100%') : void 0)}
+		innerRef={el => (el ? (el.style = 'width:1000px;') : void 0)}
 		onSwipedLeft={() => toggle()}
 	>
 		<div className="research-container">

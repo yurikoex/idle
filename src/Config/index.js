@@ -86,7 +86,7 @@ export const getReset = (level = 0) => {
 	return resetValue[level]
 }
 
-export const version = { version: 2 }
+export const version = { version: 3 }
 
 export const researchBase = {
 	completed: false,
